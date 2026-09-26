@@ -1,0 +1,298 @@
+{
+  "categories": {
+    "anime": {
+      "label": "Anime",
+      "tag": "THE ANIME UNIVERSE",
+      "icon": "⚡",
+      "color": "#ff2ec4",
+      "articles": [
+        { "title": "The Rise of New-Gen Anime: A Global Phenomenon", "excerpt": "How a new wave of anime series captured audiences far beyond Japan and changed streaming charts everywhere.", "date": "2026-05-22", "readTime": "5 min read" },
+        { "title": "Behind the Sword: Choreographing Anime's Biggest Battles", "excerpt": "A look at how studios plan and animate the fight scenes fans replay frame by frame.", "date": "2026-04-11", "readTime": "6 min read" },
+        { "title": "From Manga Panel to Anime Frame", "excerpt": "The creative pipeline that turns black-and-white manga pages into full-color seasonal anime.", "date": "2026-03-02", "readTime": "4 min read" }
+      ],
+      "characters": [
+        { "name": "Levi Ackerman", "series": "Attack on Titan", "bio": "A disciplined and famously skilled squad captain who fights on the front lines of humanity's war against the Titans.", "traits": ["Disciplined", "Loyal", "Tactical"], "icon": "🗡️" },
+        { "name": "Gojo Satoru", "series": "Jujutsu Kaisen", "bio": "An overwhelmingly powerful sorcery teacher known for his confidence and unmatched cursed technique.", "traits": ["Confident", "Powerful", "Playful"], "icon": "👁️" },
+        { "name": "Luffy", "series": "One Piece", "bio": "The stretchy, endlessly optimistic captain sailing the seas in search of the ultimate treasure.", "traits": ["Fearless", "Loyal", "Free-spirited"], "icon": "🏴‍☠️" },
+        { "name": "Eren Yeager", "series": "Attack on Titan", "bio": "A determined young soldier whose drive for freedom shapes the fate of his entire world.", "traits": ["Determined", "Intense", "Complex"], "icon": "⚔️" },
+        { "name": "Tanjiro Kamado", "series": "Demon Slayer", "bio": "A kind-hearted swordsman who trains relentlessly to protect his sister and avenge his family.", "traits": ["Compassionate", "Resilient", "Brave"], "icon": "🌸" }
+      ],
+      "events": [
+        { "title": "Japan Expo 2026", "date": "2026-07-05", "location": "Paris, France", "description": "One of Europe's largest celebrations of Japanese pop culture, anime screenings and cosplay." },
+        { "title": "Anime NYC", "date": "2026-08-21", "location": "New York, USA", "description": "A convention weekend packed with premieres, panels and artist alley finds." },
+        { "title": "Crunchyroll Watch Party", "date": "2026-09-14", "location": "Online", "description": "A synchronized global watch party for the season's most anticipated premiere." }
+      ],
+      "gallery": [
+        { "icon": "⛩️", "caption": "Shrine gates at dawn" },
+        { "icon": "🌸", "caption": "Cherry blossom key visual" },
+        { "icon": "🗡️", "caption": "Blade forging concept art" },
+        { "icon": "🌊", "caption": "Ocean voyage panorama" },
+        { "icon": "🏯", "caption": "Castle town backdrop" },
+        { "icon": "🔥", "caption": "Battle aftermath scene" }
+      ],
+      "videos": [
+        { "title": "Demon Slayer: Swordsmith Village Arc — Trailer", "type": "trailer", "desc": "Official teaser for the newest arc." },
+        { "title": "Behind the Scenes: Voice Recording", "type": "interview", "desc": "Cast members discuss bringing their characters to life." },
+        { "title": "Fan Edit: Top 10 Anime Fights", "type": "fan content", "desc": "A community-made countdown of iconic battles." }
+      ],
+      "merch": [
+        { "name": "Ackerman Cargo Jacket", "price": 54, "desc": "Utility-style jacket inspired by Survey Corps gear.", "icon": "🧥" },
+        { "name": "Cursed Energy Hoodie", "price": 48, "desc": "Oversized hoodie with glow-effect print.", "icon": "👕" },
+        { "name": "Straw Hat Pin Set", "price": 15, "desc": "Enamel pin set for adventurers.", "icon": "📌" },
+        { "name": "Demon Slayer Haori Print Tee", "price": 29, "desc": "Checkered-pattern graphic tee.", "icon": "👚" }
+      ]
+    },
+    "gaming": {
+      "label": "Gaming",
+      "tag": "THE GAMING UNIVERSE",
+      "icon": "🎮",
+      "color": "#00d4ff",
+      "articles": [
+        { "title": "Top 10 RPG Games You Shouldn't Miss in 2026", "excerpt": "The role-playing titles fans are sinking hundreds of hours into this year.", "date": "2026-05-18", "readTime": "6 min read" },
+        { "title": "How Open-World Design Keeps Getting Bigger", "excerpt": "Studios are rethinking scale, exploration and player freedom.", "date": "2026-04-27", "readTime": "5 min read" },
+        { "title": "Inside the Rise of Competitive Esports Arenas", "excerpt": "Why live esports venues are selling out faster than ever.", "date": "2026-03-15", "readTime": "4 min read" }
+      ],
+      "characters": [
+        { "name": "Kael Voss", "series": "Skyshard Chronicles", "bio": "A wandering mercenary-turned-hero whose blade choices shape the story's outcome.", "traits": ["Strategic", "Independent", "Sharp-witted"], "icon": "🛡️" },
+        { "name": "Nyra", "series": "Starforge Online", "bio": "A stealth specialist who leads raid parties through the galaxy's most dangerous zones.", "traits": ["Stealthy", "Precise", "Team-first"], "icon": "🕹️" },
+        { "name": "Commander Reyes", "series": "Frontline Protocol", "bio": "A tactical shooter icon known for clutch last-stand plays in ranked matches.", "traits": ["Calm", "Tactical", "Competitive"], "icon": "🎯" },
+        { "name": "Mira Quinn", "series": "Pixel Kingdoms", "bio": "A builder-class hero beloved for creative sandbox community events.", "traits": ["Creative", "Friendly", "Patient"], "icon": "🧱" },
+        { "name": "Draven Cole", "series": "Skyshard Chronicles", "bio": "A rival duelist whose boss fight is considered one of the hardest in the series.", "traits": ["Ruthless", "Skilled", "Proud"], "icon": "⚔️" }
+      ],
+      "events": [
+        { "title": "World Gaming Championship Finals", "date": "2026-07-12", "location": "Seoul, South Korea", "description": "The grand finals of the year's biggest esports championship." },
+        { "title": "IndieCon Showcase", "date": "2026-08-09", "location": "Austin, USA", "description": "A weekend spotlighting indie developers and playable demos." },
+        { "title": "Community Speedrun Marathon", "date": "2026-09-20", "location": "Online", "description": "A charity marathon featuring record-attempt speedruns." }
+      ],
+      "gallery": [
+        { "icon": "🕹️", "caption": "Retro arcade cabinet lineup" },
+        { "icon": "🌌", "caption": "Open-world skybox concept" },
+        { "icon": "🏆", "caption": "Championship trophy reveal" },
+        { "icon": "🧩", "caption": "Level design blueprint" },
+        { "icon": "🎧", "caption": "Esports broadcast booth" },
+        { "icon": "💾", "caption": "Retro classics cartridge wall" }
+      ],
+      "videos": [
+        { "title": "Skyshard Chronicles II — Official Trailer", "type": "trailer", "desc": "First reveal of the highly anticipated sequel." },
+        { "title": "Dev Diary: Building an Open World", "type": "interview", "desc": "Developers explain their world-building process." },
+        { "title": "Fan Highlight Reel: Clutch Plays", "type": "fan content", "desc": "Community-submitted competitive highlights." }
+      ],
+      "merch": [
+        { "name": "Skyshard Controller Skin", "price": 19, "desc": "Vinyl skin for popular console controllers.", "icon": "🎮" },
+        { "name": "Championship Snapback Cap", "price": 22, "desc": "Embroidered esports league cap.", "icon": "🧢" },
+        { "name": "Pixel Kingdoms Plush", "price": 25, "desc": "Collectible plush of the builder mascot.", "icon": "🧸" },
+        { "name": "Retro Arcade Keychain", "price": 9, "desc": "Mini cartridge-shaped keychain.", "icon": "🔑" }
+      ]
+    },
+    "movies": {
+      "label": "Movies",
+      "tag": "THE MOVIE UNIVERSE",
+      "icon": "🎬",
+      "color": "#7b2ff7",
+      "articles": [
+        { "title": "Summer Blockbuster Season: What to Watch", "excerpt": "A roundup of the biggest theatrical releases fans are lining up for.", "date": "2026-05-30", "readTime": "5 min read" },
+        { "title": "How Franchise Universes Keep Fans Coming Back", "excerpt": "The storytelling tricks that turn a single film into a decade-long saga.", "date": "2026-04-19", "readTime": "6 min read" },
+        { "title": "Practical Effects vs CGI: The Debate Continues", "excerpt": "Directors weigh in on why some scenes still go old-school.", "date": "2026-03-08", "readTime": "4 min read" }
+      ],
+      "characters": [
+        { "name": "Captain Vale", "series": "Ironclad Saga", "bio": "A morally-driven exosuit hero who leads a found-family team of defenders.", "traits": ["Heroic", "Witty", "Protective"], "icon": "🦾" },
+        { "name": "Dr. Elena Frost", "series": "Signal Horizon", "bio": "A scientist-turned-reluctant hero navigating a first-contact crisis.", "traits": ["Brilliant", "Cautious", "Resourceful"], "icon": "🔬" },
+        { "name": "The Wanderer", "series": "Dustline Trilogy", "bio": "A mysterious gunslinger crossing a post-apocalyptic frontier in search of redemption.", "traits": ["Stoic", "Skilled", "Haunted"], "icon": "🤠" },
+        { "name": "Nova Grey", "series": "Ironclad Saga", "bio": "A rookie recruit whose arc from outsider to leader anchors the trilogy.", "traits": ["Ambitious", "Loyal", "Growing"], "icon": "⭐" },
+        { "name": "Director Kane", "series": "Signal Horizon", "bio": "The franchise's most compelling antagonist, driven by a belief he's the hero.", "traits": ["Calculating", "Charismatic", "Complex"], "icon": "🎭" }
+      ],
+      "events": [
+        { "title": "Comic Con International", "date": "2026-07-24", "location": "San Diego, USA", "description": "Panels, first-look trailers and cast Q&As for the year's biggest films." },
+        { "title": "Franchise Fan Meetup", "date": "2026-08-16", "location": "London, UK", "description": "A gathering for fans of long-running cinematic universes." },
+        { "title": "Outdoor Classics Screening Night", "date": "2026-09-06", "location": "Los Angeles, USA", "description": "A rooftop screening series celebrating fan-favorite classics." }
+      ],
+      "gallery": [
+        { "icon": "🎞️", "caption": "Behind-the-scenes reel" },
+        { "icon": "🏙️", "caption": "City skyline set piece" },
+        { "icon": "🚀", "caption": "Launch sequence concept art" },
+        { "icon": "🎬", "caption": "Director's clapboard moment" },
+        { "icon": "🌅", "caption": "Frontier sunset shot" },
+        { "icon": "🍿", "caption": "Premiere night crowd" }
+      ],
+      "videos": [
+        { "title": "Ironclad Saga: Final Chapter — Official Trailer", "type": "trailer", "desc": "The last chapter of the beloved trilogy." },
+        { "title": "Cast Roundtable Interview", "type": "interview", "desc": "The ensemble cast discusses the franchise's legacy." },
+        { "title": "Fan Tribute Montage", "type": "fan content", "desc": "A community-edited tribute to the saga's biggest moments." }
+      ],
+      "merch": [
+        { "name": "Ironclad Visor Replica", "price": 39, "desc": "Display-stand visor replica prop.", "icon": "🪖" },
+        { "name": "Signal Horizon Poster Set", "price": 18, "desc": "Set of three lithograph-style posters.", "icon": "🖼️" },
+        { "name": "Dustline Trilogy Enamel Pin", "price": 12, "desc": "Collectible pin featuring The Wanderer.", "icon": "📌" },
+        { "name": "Premiere Night Tote Bag", "price": 16, "desc": "Canvas tote with franchise artwork.", "icon": "👜" }
+      ]
+    },
+    "tvshows": {
+      "label": "TV Shows",
+      "tag": "THE TV SHOW UNIVERSE",
+      "icon": "📺",
+      "color": "#00d4ff",
+      "articles": [
+        { "title": "Stranger Things S4: What Fans Are Theorizing", "excerpt": "Breaking down the biggest fan theories heading into the finale season.", "date": "2026-05-24", "readTime": "5 min read" },
+        { "title": "The Streaming Wars: Which Shows Are Winning", "excerpt": "A look at which series are dominating watch-time charts this quarter.", "date": "2026-04-30", "readTime": "6 min read" },
+        { "title": "Binge Culture: How Fans Watch Now", "excerpt": "Why weekly drops are making a comeback against full-season binges.", "date": "2026-03-19", "readTime": "4 min read" }
+      ],
+      "characters": [
+        { "name": "Maren Cole", "series": "Hollow Creek", "bio": "A small-town detective whose investigation unravels a decades-old mystery.", "traits": ["Observant", "Stubborn", "Empathetic"], "icon": "🔦" },
+        { "name": "Theo Marsh", "series": "Nightfall Bay", "bio": "A charming rival whose loyalties keep fans guessing every season.", "traits": ["Charming", "Unpredictable", "Loyal"], "icon": "🌙" },
+        { "name": "Dr. Priya Anand", "series": "Signal Horizon: The Series", "bio": "A brilliant strategist leading humanity's response in the spin-off series.", "traits": ["Brilliant", "Decisive", "Composed"], "icon": "🧠" },
+        { "name": "Jonah Prescott", "series": "Hollow Creek", "bio": "The town's reluctant sheriff caught between old secrets and new threats.", "traits": ["Grounded", "Protective", "Weary"], "icon": "⭐" },
+        { "name": "Lux", "series": "Nightfall Bay", "bio": "A fan-favorite supporting character whose comic timing steals every scene.", "traits": ["Funny", "Chaotic", "Kind-hearted"], "icon": "😄" }
+      ],
+      "events": [
+        { "title": "Streaming Series Showcase", "date": "2026-07-18", "location": "Los Angeles, USA", "description": "First-look footage and cast panels for upcoming seasons." },
+        { "title": "Hollow Creek Fan Convention", "date": "2026-08-02", "location": "Vancouver, Canada", "description": "A dedicated fan gathering with set tours and trivia nights." },
+        { "title": "Season Finale Watch Party", "date": "2026-09-11", "location": "Online", "description": "A synchronized livestream finale watch-along with the cast." }
+      ],
+      "gallery": [
+        { "icon": "📼", "caption": "Vintage title card art" },
+        { "icon": "🌲", "caption": "Hollow Creek forest set" },
+        { "icon": "🏖️", "caption": "Nightfall Bay coastline" },
+        { "icon": "🕯️", "caption": "Mystery-lit hallway scene" },
+        { "icon": "📻", "caption": "Retro broadcast prop" },
+        { "icon": "🎙️", "caption": "Table read moment" }
+      ],
+      "videos": [
+        { "title": "Hollow Creek Season 3 — Official Trailer", "type": "trailer", "desc": "The mystery deepens in the new season." },
+        { "title": "Writers' Room Interview", "type": "interview", "desc": "The writing team discusses the season's biggest twists." },
+        { "title": "Fan Theory Breakdown", "type": "fan content", "desc": "A community video unpacking clues from the latest episode." }
+      ],
+      "merch": [
+        { "name": "Hollow Creek Detective Notebook", "price": 14, "desc": "Replica case-file notebook.", "icon": "📓" },
+        { "name": "Nightfall Bay Enamel Mug", "price": 17, "desc": "Color-changing mug with show artwork.", "icon": "☕" },
+        { "name": "Signal Horizon Patch Set", "price": 11, "desc": "Iron-on patch set from the series.", "icon": "🧷" },
+        { "name": "Season Finale Poster", "price": 15, "desc": "Limited print finale poster.", "icon": "🖼️" }
+      ]
+    },
+    "kpop": {
+      "label": "K-Pop",
+      "tag": "THE K-POP UNIVERSE",
+      "icon": "🎤",
+      "color": "#ff2ec4",
+      "articles": [
+        { "title": "K-pop Groups Dominating the Global Charts", "excerpt": "Which groups are breaking streaming records this comeback season.", "date": "2026-05-16", "readTime": "5 min read" },
+        { "title": "Inside a Comeback: From Concept to Stage", "excerpt": "The months-long process behind a single comeback release.", "date": "2026-04-22", "readTime": "6 min read" },
+        { "title": "Fandom Power: How Fan Projects Shape Charts", "excerpt": "Streaming parties, hashtag pushes and the fandoms driving them.", "date": "2026-03-27", "readTime": "4 min read" }
+      ],
+      "characters": [
+        { "name": "Rin", "series": "LUNARIA", "bio": "The group's main vocalist known for powerful live performances.", "traits": ["Powerful voice", "Hardworking", "Warm"], "icon": "🎙️" },
+        { "name": "Haon", "series": "NEXT CIPHER", "bio": "A leader and main rapper praised for his stage presence.", "traits": ["Confident", "Leader", "Creative"], "icon": "🎶" },
+        { "name": "Yuna", "series": "LUNARIA", "bio": "The main dancer whose choreography breakdowns go viral every comeback.", "traits": ["Precise", "Energetic", "Dedicated"], "icon": "💃" },
+        { "name": "Doyoon", "series": "NEXT CIPHER", "bio": "The group's producer-member who co-writes several title tracks.", "traits": ["Musical", "Quiet", "Thoughtful"], "icon": "🎹" },
+        { "name": "Sori", "series": "PRISM6", "bio": "A rookie center known for a viral debut stage that broke first-week records.", "traits": ["Bright", "Rising star", "Determined"], "icon": "✨" }
+      ],
+      "events": [
+        { "title": "BTN 'Dynamite' Official MV", "date": "2026-07-04", "location": "Los Angeles, USA", "description": "A global comeback event streamed live to fans everywhere." },
+        { "title": "K-Pop World Tour Stop", "date": "2026-08-14", "location": "Manila, Philippines", "description": "A stadium tour date drawing thousands of fans from across the region." },
+        { "title": "Fan Meet & Streaming Party", "date": "2026-09-02", "location": "Online", "description": "A coordinated global streaming party ahead of chart week." }
+      ],
+      "gallery": [
+        { "icon": "🎤", "caption": "Stage lighting rehearsal" },
+        { "icon": "💿", "caption": "Comeback album concept art" },
+        { "icon": "🌟", "caption": "Fanlight sea at a concert" },
+        { "icon": "🎧", "caption": "Studio recording session" },
+        { "icon": "🕺", "caption": "Choreography practice room" },
+        { "icon": "🎊", "caption": "World tour kickoff confetti" }
+      ],
+      "videos": [
+        { "title": "LUNARIA 'Dynamite' — Official MV", "type": "trailer", "desc": "The group's latest title track music video." },
+        { "title": "Behind the Choreography", "type": "interview", "desc": "The choreography team breaks down the title track's dance." },
+        { "title": "Fancam Highlight Compilation", "type": "fan content", "desc": "Fan-recorded stage moments from the latest tour." }
+      ],
+      "merch": [
+        { "name": "LUNARIA Lightstick Ver.3", "price": 45, "desc": "Official-style concert lightstick.", "icon": "🔦" },
+        { "name": "NEXT CIPHER Photocard Set", "price": 13, "desc": "Comeback-era photocard set.", "icon": "🃏" },
+        { "name": "PRISM6 Debut Album", "price": 24, "desc": "Physical album with photobook.", "icon": "💿" },
+        { "name": "World Tour Hoodie", "price": 52, "desc": "Tour-dates hoodie in group colors.", "icon": "👕" }
+      ]
+    },
+    "comics": {
+      "label": "Comics",
+      "tag": "HEROES & LEGENDS",
+      "icon": "💥",
+      "color": "#7b2ff7",
+      "articles": [
+        { "title": "The Golden Age Heroes Still Inspiring Comics Today", "excerpt": "How classic-era heroes continue to shape modern storylines.", "date": "2026-05-12", "readTime": "5 min read" },
+        { "title": "Villains Fans Love to Hate", "excerpt": "What makes a comic book antagonist truly unforgettable.", "date": "2026-04-06", "readTime": "4 min read" },
+        { "title": "Indie Comics Worth Reading This Year", "excerpt": "A spotlight on self-published titles breaking through.", "date": "2026-03-11", "readTime": "5 min read" }
+      ],
+      "characters": [
+        { "name": "Iron Guard", "series": "Vanguard Comics", "bio": "A genius inventor whose powered armor protects the city from within.", "traits": ["Genius", "Witty", "Resourceful"], "icon": "🦾" },
+        { "name": "Nightshade", "series": "Vanguard Comics", "bio": "A shadow-stepping vigilante who operates outside the law for justice.", "traits": ["Mysterious", "Agile", "Just"], "icon": "🌑" },
+        { "name": "Doctor Ruin", "series": "Vanguard Comics", "bio": "A brilliant but broken scientist turned the city's most feared villain.", "traits": ["Brilliant", "Tragic", "Ruthless"], "icon": "☠️" },
+        { "name": "Solstice", "series": "Aurora Legends", "bio": "A cosmic-powered hero who defends the multiverse from collapse.", "traits": ["Powerful", "Noble", "Calm"], "icon": "🌞" },
+        { "name": "Grimshaw", "series": "Aurora Legends", "bio": "A morally grey mercenary who often fights alongside the heroes.", "traits": ["Sarcastic", "Skilled", "Unpredictable"], "icon": "🔥" }
+      ],
+      "events": [
+        { "title": "Vanguard Comics Issue #100 Launch", "date": "2026-07-09", "location": "New York, USA", "description": "A milestone issue launch with signings and exclusive covers." },
+        { "title": "Indie Comics Fest", "date": "2026-08-23", "location": "Chicago, USA", "description": "A celebration of independent comic creators and small presses." },
+        { "title": "Villains Panel Live", "date": "2026-09-05", "location": "Online", "description": "Writers discuss crafting comics' most memorable antagonists." }
+      ],
+      "gallery": [
+        { "icon": "🖋️", "caption": "Inked cover artwork" },
+        { "icon": "💥", "caption": "Splash-page action panel" },
+        { "icon": "🏙️", "caption": "City skyline issue cover" },
+        { "icon": "📗", "caption": "Classic issue archive shelf" },
+        { "icon": "🎨", "caption": "Colorist's palette test" },
+        { "icon": "🖤", "caption": "Villain reveal panel" }
+      ],
+      "videos": [
+        { "title": "Vanguard #100 — Motion Cover Reveal", "type": "trailer", "desc": "An animated reveal of the milestone issue's cover." },
+        { "title": "Writer & Artist Interview", "type": "interview", "desc": "The creative team discusses the series' next arc." },
+        { "title": "Fan Panel Colorization", "type": "fan content", "desc": "A fan artist recolors a classic splash page." }
+      ],
+      "merch": [
+        { "name": "Iron Guard Chestplate Pin", "price": 12, "desc": "Enamel pin of the hero's emblem.", "icon": "📌" },
+        { "name": "Vanguard #1 Reprint", "price": 8, "desc": "Reprinted first issue in collectible sleeve.", "icon": "📗" },
+        { "name": "Nightshade Poster", "price": 16, "desc": "Ink-style character poster.", "icon": "🖼️" },
+        { "name": "Doctor Ruin Figure", "price": 34, "desc": "Articulated collectible villain figure.", "icon": "🧍" }
+      ]
+    },
+    "manga": {
+      "label": "Manga",
+      "tag": "THE MANGA LIBRARY",
+      "icon": "📖",
+      "color": "#00d4ff",
+      "articles": [
+        { "title": "Shonen vs Seinen: What's the Real Difference?", "excerpt": "Breaking down two of manga's biggest demographic categories.", "date": "2026-05-09", "readTime": "5 min read" },
+        { "title": "Fantasy Manga Worlds Worth Getting Lost In", "excerpt": "A guide to the most imaginative settings in current manga.", "date": "2026-04-14", "readTime": "6 min read" },
+        { "title": "The Slow-Burn Romance Manga Fans Are Loving", "excerpt": "Why understated storytelling is having a moment.", "date": "2026-03-23", "readTime": "4 min read" }
+      ],
+      "characters": [
+        { "name": "Kenji Sato", "series": "Ironbound Blade", "bio": "A shonen protagonist training to surpass his late master's legacy.", "traits": ["Determined", "Hot-headed", "Loyal"], "icon": "⚔️" },
+        { "name": "Ayame", "series": "Whispering Garden", "bio": "A seinen lead navigating grief and quiet resilience in a small town.", "traits": ["Reflective", "Gentle", "Strong-willed"], "icon": "🌿" },
+        { "name": "Prince Rhoan", "series": "Skybound Realms", "bio": "An exiled royal seeking to reclaim his kingdom through fantastical trials.", "traits": ["Noble", "Clever", "Stubborn"], "icon": "👑" },
+        { "name": "Hana & Sora", "series": "Paper Moon Letters", "bio": "The central pair of a slow-burn romance told through handwritten letters.", "traits": ["Sincere", "Patient", "Hopeful"], "icon": "💌" },
+        { "name": "Master Toren", "series": "Ironbound Blade", "bio": "A legendary swordsman whose memory drives the story's central conflict.", "traits": ["Wise", "Mysterious", "Honorable"], "icon": "🥷" }
+      ],
+      "events": [
+        { "title": "Manga Library Fan Signing", "date": "2026-07-15", "location": "Tokyo, Japan", "description": "A signing event with fan-favorite manga illustrators." },
+        { "title": "Slow-Burn Romance Book Club Live", "date": "2026-08-06", "location": "Online", "description": "A live discussion of the season's most-loved romance arc." },
+        { "title": "Fantasy Manga Art Exhibit", "date": "2026-09-17", "location": "Singapore", "description": "An exhibition of original fantasy-manga concept art." }
+      ],
+      "gallery": [
+        { "icon": "🖊️", "caption": "Pen-and-ink page draft" },
+        { "icon": "📚", "caption": "Volume spine collection" },
+        { "icon": "🌙", "caption": "Night-sky fantasy panel" },
+        { "icon": "🍃", "caption": "Garden scene tone work" },
+        { "icon": "💌", "caption": "Handwritten letter panel" },
+        { "icon": "🏹", "caption": "Skybound Realms battle sketch" }
+      ],
+      "videos": [
+        { "title": "Ironbound Blade — Anime Adaptation Teaser", "type": "trailer", "desc": "First footage of the manga's upcoming anime adaptation." },
+        { "title": "Mangaka Studio Tour", "type": "interview", "desc": "A rare look inside a working mangaka's studio." },
+        { "title": "Fan Animatic: Paper Moon Letters", "type": "fan content", "desc": "A community-made animatic of a fan-favorite chapter." }
+      ],
+      "merch": [
+        { "name": "Ironbound Blade Volume 1", "price": 11, "desc": "First volume with bonus illustration.", "icon": "📘" },
+        { "name": "Skybound Realms Bookmark Set", "price": 7, "desc": "Set of five character bookmarks.", "icon": "🔖" },
+        { "name": "Paper Moon Letters Tote", "price": 18, "desc": "Canvas tote with line-art cover design.", "icon": "👜" },
+        { "name": "Whispering Garden Print", "price": 14, "desc": "A4 art print of the volume 3 cover.", "icon": "🖼️" }
+      ]
+    }
+  }
+}

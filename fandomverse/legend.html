@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legend Comics</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background:
+            radial-gradient(circle at 85% 0%, rgba(106,45,255,0.25), transparent 40%),
+            radial-gradient(circle at 0% 100%, rgba(255,46,196,0.18), transparent 40%),
+            #06050f;
+        color: #f5f3ff;
+        font-family: Arial, sans-serif;
+        padding: 50px 7%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+
+    .intro {
+        text-align: center;
+        color: #a79fd1;
+        margin-bottom: 45px;
+    }
+
+    .comics {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+
+    .comic {
+        background: #141026;
+        border: 1px solid rgba(139,61,255,0.28);
+        border-radius: 12px;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .comic:hover {
+        transform: translateY(-8px);
+        border-color: #f59e0b;
+    }
+
+    .comic img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .comic h2 {
+        font-size: 20px;
+        padding: 18px 18px 5px;
+    }
+
+    .comic p {
+        color: #9d94c2;
+        padding: 0 18px 20px;
+    }
+
+    @media (max-width: 900px) {
+        .comics {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 600px) {
+        .comics {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="index.html">FANDOM<span>VERSE</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="anime.html">Anime</a>
+      <a href="gaming.html">Gaming</a>
+      <a href="movies.html">Movies</a>
+      <a href="tvshows.html">TV Shows</a>
+      <a href="kpop.html">K-Pop</a>
+      <a href="comics.html">Comics</a>
+      <a href="manga.html">Manga</a>
+      <a href="outfits.html">Outfits</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <form class="nav-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="Search FandomVerse..." aria-label="Search FandomVerse">
+        <button type="submit" aria-label="Search">🔍</button>
+      </form>
+      <a href="bookmarks.html" class="nav-icon-btn" title="My Bookmarks">🔖</a>
+      <button type="button" class="nav-icon-btn" onclick="showMessage('This is a UI preview only. Login is not implemented in this demo.')" title="Login">👤</button>
+    </div>
+  </nav>
+</header>
+
+<h1>Legend Comics</h1>
+<p class="intro">Discover the legendary characters who shaped comic book history</p>
+
+<div class="comics">
+
+    <div class="comic">
+        <img src="https://i.redd.it/kqz60h1p1wrb1.jpg" alt="Superman">
+        <h2>Superman</h2>
+        <p>The legendary Man of Steel and one of the greatest heroes.</p>
+    </div>
+
+    <div class="comic">
+        <img src="https://i.pinimg.com/736x/e9/02/0b/e9020bd38dbe20292b42cfa556bd20bf.jpg" alt="Batman">
+        <h2>Batman</h2>
+        <p>The Dark Knight and legendary protector of Gotham City.</p>
+    </div>
+
+    <div class="comic">
+        <img src="https://m.media-amazon.com/images/I/71YshV0v6IL._AC_SY741_.jpg" alt="Spider-Man">
+        <h2>Spider-Man</h2>
+        <p>The friendly neighborhood hero with incredible abilities.</p>
+    </div>
+
+    <div class="comic">
+        <img src="https://i.pinimg.com/736x/b4/6b/ef/b46bef7f5aede7d62711d1b2b232d3f6.jpg" alt="Wonder Woman">
+        <h2>Wonder Woman</h2>
+        <p>Amazon warrior and symbol of courage and justice.</p>
+    </div>
+
+    <div class="comic">
+        <img src="https://michaelspradlin.com/WP/wp-content/uploads/2013/06/Captain-America-Comic-e1370355949874.jpg" alt="Captain America">
+        <h2>Captain America</h2>
+        <p>The legendary super soldier and symbol of heroism.</p>
+    </div>
+
+    <div class="comic">
+        <img src="https://static.wikia.nocookie.net/ironman/images/c/c6/STL097606.jpg/revision/latest?cb=20191117212158" alt="Iron Man">
+        <h2>Iron Man</h2>
+        <p>Genius inventor and armored superhero.</p>
+    </div>
+
+    <div class="comic">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/47/Thor_%28Ultimate_Marvel_character%29.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="Thor">
+        <h2>Thor</h2>
+        <p>The legendary God of Thunder and wielder of Mjolnir.</p>
+    </div>
+
+    <div class="comic">
+        <img src="https://i.redd.it/13lbbfpyruec1.jpeg" alt="Hulk">
+        <h2>Hulk</h2>
+        <p>One of Marvel's most powerful and iconic heroes.</p>
+    </div>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 FandomVerse</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

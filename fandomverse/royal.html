@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Outfits</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background:
+            radial-gradient(circle at 85% 0%, rgba(106,45,255,0.25), transparent 40%),
+            radial-gradient(circle at 0% 100%, rgba(255,46,196,0.18), transparent 40%),
+            #06050f;
+            color: #f5f3ff;
+            font-family: Arial, sans-serif;
+            padding: 50px 7%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            text-align: center;
+            color: #a79fd1;
+            margin-bottom: 45px;
+        }
+
+        .outfits {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .outfit {
+            background: #141026;
+            border: 1px solid rgba(139,61,255,0.28);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .outfit:hover {
+            transform: translateY(-8px);
+            border-color: #d4af37;
+        }
+
+        .outfit img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .outfit h2 {
+            font-size: 20px;
+            padding: 18px 18px 5px;
+        }
+
+        .outfit p {
+            color: #9d94c2;
+            padding: 0 18px 20px;
+        }
+
+        @media (max-width: 900px) {
+            .outfits {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .outfits {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="index.html">FANDOM<span>VERSE</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="anime.html">Anime</a>
+      <a href="gaming.html">Gaming</a>
+      <a href="movies.html">Movies</a>
+      <a href="tvshows.html">TV Shows</a>
+      <a href="kpop.html">K-Pop</a>
+      <a href="comics.html">Comics</a>
+      <a href="manga.html">Manga</a>
+      <a href="outfits.html">Outfits</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <form class="nav-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="Search FandomVerse..." aria-label="Search FandomVerse">
+        <button type="submit" aria-label="Search">🔍</button>
+      </form>
+      <a href="bookmarks.html" class="nav-icon-btn" title="My Bookmarks">🔖</a>
+      <button type="button" class="nav-icon-btn" onclick="showMessage('This is a UI preview only. Login is not implemented in this demo.')" title="Login">👤</button>
+    </div>
+  </nav>
+</header>
+
+<h1>Royal Outfits</h1>
+    <p class="intro">Explore elegant and majestic royal fashion</p>
+
+    <div class="outfits">
+
+        <div class="outfit">
+            <img src="images/king_outfit.png" alt="King Outfit">
+            <h2>King</h2>
+            <p>Majestic royal attire</p>
+        </div>
+
+        <div class="outfit">
+            <img src="images/queen_outfit.png" alt="Queen Outfit">
+            <h2>Queen</h2>
+            <p>Elegant royal dress</p>
+        </div>
+
+        <div class="outfit">
+            <img src="images/prince_outfit.png" alt="Prince Outfit">
+            <h2>Prince</h2>
+            <p>Royal prince costume</p>
+        </div>
+
+        <div class="outfit">
+            <img src="images/princess_outfit.png" alt="Princess Outfit">
+            <h2>Princess</h2>
+            <p>Beautiful royal gown</p>
+        </div>
+
+        <div class="outfit">
+            <img src="images/royal_knight_outfit.png" alt="Royal Knight">
+            <h2>Royal Knight</h2>
+            <p>Classic knight armor</p>
+        </div>
+
+        <div class="outfit">
+            <img src="images/emperor_outfit.png" alt="Emperor Outfit">
+            <h2>Emperor</h2>
+            <p>Grand imperial outfit</p>
+        </div>
+
+        <div class="outfit">
+            <img src="images/royal_warrior_outfit.png" alt="Royal Warrior">
+            <h2>Royal Warrior</h2>
+            <p>Powerful warrior armor</p>
+        </div>
+
+        <div class="outfit">
+            <img src="images/royal_gown_outfit.png" alt="Royal Gown">
+            <h2>Royal Gown</h2>
+            <p>Luxury ceremonial fashion</p>
+        </div>
+
+    </div>
+
+<footer>
+  <p>&copy; 2026 FandomVerse</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

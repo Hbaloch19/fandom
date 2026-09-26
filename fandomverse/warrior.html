@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warrior Outfits</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background:
+            radial-gradient(circle at 85% 0%, rgba(106,45,255,0.25), transparent 40%),
+            radial-gradient(circle at 0% 100%, rgba(255,46,196,0.18), transparent 40%),
+            #06050f;
+            color: #f5f3ff;
+            font-family: Arial, sans-serif;
+            padding: 50px 7%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            text-align: center;
+            color: #a79fd1;
+            margin-bottom: 45px;
+        }
+
+        .outfits {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .outfit {
+            background: #141026;
+            border: 1px solid rgba(139,61,255,0.28);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .outfit:hover {
+            transform: translateY(-8px);
+            border-color: #f59e0b;
+        }
+
+        .outfit img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .outfit h2 {
+            font-size: 20px;
+            padding: 18px 18px 5px;
+        }
+
+        .outfit p {
+            color: #9d94c2;
+            padding: 0 18px 20px;
+        }
+
+        @media (max-width: 900px) {
+            .outfits {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .outfits {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="index.html">FANDOM<span>VERSE</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="anime.html">Anime</a>
+      <a href="gaming.html">Gaming</a>
+      <a href="movies.html">Movies</a>
+      <a href="tvshows.html">TV Shows</a>
+      <a href="kpop.html">K-Pop</a>
+      <a href="comics.html">Comics</a>
+      <a href="manga.html">Manga</a>
+      <a href="outfits.html">Outfits</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <form class="nav-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="Search FandomVerse..." aria-label="Search FandomVerse">
+        <button type="submit" aria-label="Search">🔍</button>
+      </form>
+      <a href="bookmarks.html" class="nav-icon-btn" title="My Bookmarks">🔖</a>
+      <button type="button" class="nav-icon-btn" onclick="showMessage('This is a UI preview only. Login is not implemented in this demo.')" title="Login">👤</button>
+    </div>
+  </nav>
+</header>
+
+<h1>Warrior Outfits</h1>
+    <p class="intro">Explore powerful and legendary warrior outfits</p>
+
+    <div class="outfits">
+
+        <div class="outfit">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm8sSvchObntmg5YvecLLybcTpKuYmrC-zAW2A0dHJqg&s=10" alt="Samurai Warrior">
+            <h2>Samurai</h2>
+            <p>Traditional warrior armor</p>
+        </div>
+
+        <div class="outfit">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnsljJPlYxdSQOAhva24-wQc9el7e7cFDlhinlUo_ubQ&s=10" alt="Viking Warrior">
+            <h2>Viking</h2>
+            <p>Fearless battle outfit</p>
+        </div>
+
+        <div class="outfit">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw1UB6nq8GuA41Ecd7RpDpF3WOODRvS3D561aUDJHpEw&s=10" alt="Knight">
+            <h2>Knight</h2>
+            <p>Classic medieval armor</p>
+        </div>
+
+        <div class="outfit">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzUI9dX077Byxezp7jnLGL2fhCsW7qBtTJoGpPw4d5bQ&s=10" alt="Dark Warrior">
+            <h2>Dark Warrior</h2>
+            <p>Powerful dark armor</p>
+        </div>
+
+        <div class="outfit">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfgKy5kiQAEkjIMRA0vv9BiXne5pAg876f7OMFOYSb-A&s=10" alt="Royal Warrior">
+            <h2>Royal Warrior</h2>
+            <p>Elite royal battle outfit</p>
+        </div>
+
+        <div class="outfit">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQCNh0wSpnATwmtJmq9GQO6k8VFewbqU5BnE_xrJUCmciMl-AZi2NnYqQ&s=10" alt="Fantasy Warrior">
+            <h2>Fantasy Warrior</h2>
+            <p>Epic fantasy armor</p>
+        </div>
+
+        <div class="outfit">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRDtQ6jySO1IBg8pInwK7q2JNozSF2YENmhMxweXWwtg&s=10" alt="Warrior King">
+            <h2>Warrior King</h2>
+            <p>Legendary king armor</p>
+        </div>
+
+        <div class="outfit">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtrhYuOjO3ie3sP960yTJoSv_yB7Mc9JuN1P5mSWf9tw&s=10" alt="Ancient Warrior">
+            <h2>Ancient Warrior</h2>
+            <p>Ancient battle costume</p>
+        </div>
+
+    </div>
+
+<footer>
+  <p>&copy; 2026 FandomVerse</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

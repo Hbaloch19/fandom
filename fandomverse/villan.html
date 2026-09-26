@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Villain Comics</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background:
+            radial-gradient(circle at 85% 0%, rgba(106,45,255,0.25), transparent 40%),
+            radial-gradient(circle at 0% 100%, rgba(255,46,196,0.18), transparent 40%),
+            #06050f;
+        color: #f5f3ff;
+        font-family: Arial, sans-serif;
+        padding: 50px 7%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+
+    .intro {
+        text-align: center;
+        color: #a79fd1;
+        margin-bottom: 45px;
+    }
+
+    .comics {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+
+    .comic {
+        background: #141026;
+        border: 1px solid rgba(139,61,255,0.28);
+        border-radius: 12px;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .comic:hover {
+        transform: translateY(-8px);
+        border-color: #ef4444;
+    }
+
+    .comic img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .comic h2 {
+        font-size: 20px;
+        padding: 18px 18px 5px;
+    }
+
+    .comic p {
+        color: #9d94c2;
+        padding: 0 18px 20px;
+    }
+
+    @media (max-width: 900px) {
+        .comics {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 600px) {
+        .comics {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="index.html">FANDOM<span>VERSE</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="anime.html">Anime</a>
+      <a href="gaming.html">Gaming</a>
+      <a href="movies.html">Movies</a>
+      <a href="tvshows.html">TV Shows</a>
+      <a href="kpop.html">K-Pop</a>
+      <a href="comics.html">Comics</a>
+      <a href="manga.html">Manga</a>
+      <a href="outfits.html">Outfits</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <form class="nav-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="Search FandomVerse..." aria-label="Search FandomVerse">
+        <button type="submit" aria-label="Search">🔍</button>
+      </form>
+      <a href="bookmarks.html" class="nav-icon-btn" title="My Bookmarks">🔖</a>
+      <button type="button" class="nav-icon-btn" onclick="showMessage('This is a UI preview only. Login is not implemented in this demo.')" title="Login">👤</button>
+    </div>
+  </nav>
+</header>
+
+<h1>Villain Comics</h1>
+<p class="intro">Discover the most iconic villains from comic books</p>
+
+<div class="comics">
+
+    <div class="comic">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/98/Joker_%28DC_Comics_character%29.jpg" alt="Joker">
+        <h2>Joker</h2>
+        <p>Batman’s greatest enemy and the Clown Prince of Crime.</p>
+    </div>
+
+    <div class="comic">
+        <img src="https://cdna.artstation.com/p/assets/images/images/017/791/818/large/diego-villafana-thanos.jpg?1557349916" alt="Thanos">
+        <h2>Thanos</h2>
+        <p>The Mad Titan who seeks ultimate power.</p>
+    </div>
+
+    <div class="comic">
+        <img src="https://images.hdqwalls.com/wallpapers/darkseid-comic-art-5k-pa.jpg" alt="Darkseid">
+        <h2>Darkseid</h2>
+        <p>A powerful ruler determined to conquer the universe.</p>
+    </div>
+
+    <div class="comic">
+        <img src="https://imgix-media.wbdndc.net/ingest/book/preview/5bcef5b4-6e02-40ee-87bb-06668361e2cd/43a35d55-38de-41ce-a2ec-5ed27cb97cf2/0.jpg?w=375&h=576&sharp=50&fit=fill&fill=blur&auto=format%2Ccompress&" alt="Lex Luthor">
+        <h2>Lex Luthor</h2>
+        <p>Superman's brilliant and ruthless arch-enemy.</p>
+    </div>
+
+    <div class="comic">
+        <img src="https://cdn.mos.cms.futurecdn.net/5TNu8reM7bP5DFN88cnTQJ.jpg" alt="Green Goblin">
+        <h2>Green Goblin</h2>
+        <p>One of Spider-Man's most dangerous enemies.</p>
+    </div>
+
+    <div class="comic">
+        <img src="https://carlosnietoart.com/wp-content/uploads/2024/11/DRDOOM_PRINT_CARLOSNIETO.jpg.webp" alt="Doctor Doom">
+        <h2>Doctor Doom</h2>
+        <p>A genius villain with incredible technology and power.</p>
+    </div>
+
+    <div class="comic">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTerYYId_J-AWXnThtAwzOCB7oFDH-9X2gYaurv0HUwskIH-tpC9A6xNy8&s=10" alt="Magneto">
+        <h2>Magneto</h2>
+        <p>A powerful mutant who controls magnetic forces.</p>
+    </div>
+
+    <div class="comic">
+        <img src="https://www.incognitocomics.com.au/cdn/shop/products/494517._SX1280_QL80_TTD_1280x.jpg?v=1571482116" alt="Kingpin">
+        <h2>Kingpin</h2>
+        <p>A powerful crime lord and enemy of Spider-Man and Daredevil.</p>
+    </div>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 FandomVerse</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

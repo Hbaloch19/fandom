@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | FandomVerse</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="index.html">FANDOM<span>VERSE</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="anime.html">Anime</a>
+      <a href="gaming.html">Gaming</a>
+      <a href="movies.html">Movies</a>
+      <a href="tvshows.html">TV Shows</a>
+      <a href="kpop.html">K-Pop</a>
+      <a href="comics.html">Comics</a>
+      <a href="manga.html">Manga</a>
+      <a href="outfits.html">Outfits</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <form class="nav-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="Search FandomVerse..." aria-label="Search FandomVerse">
+        <button type="submit" aria-label="Search">🔍</button>
+      </form>
+      <a href="bookmarks.html" class="nav-icon-btn" title="My Bookmarks">🔖</a>
+      <button type="button" class="nav-icon-btn" onclick="showMessage('This is a UI preview only. Login is not implemented in this demo.')" title="Login">👤</button>
+    </div>
+  </nav>
+</header>
+
+<section class="page-header">
+  <p class="tag">DON'T MISS OUT</p>
+  <h1>EVENT HIGHLIGHTS</h1>
+  <p>Conventions, comebacks and watch parties across every fandom.</p>
+</section>
+
+<section class="section">
+  <div class="chip-row" id="chip-row"></div>
+  <div class="grid-3" id="events-container"></div>
+</section>
+
+<footer>
+  <p>© 2026 FandomVerse</p>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/dynamic.js"></script>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  fvRenderEvents("events-container", params.get("cat") || "");
+</script>
+</body>
+</html>

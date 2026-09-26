@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Power Comics</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background:
+            radial-gradient(circle at 85% 0%, rgba(106,45,255,0.25), transparent 40%),
+            radial-gradient(circle at 0% 100%, rgba(255,46,196,0.18), transparent 40%),
+            #06050f;
+            color: #f5f3ff;
+            font-family: Arial, sans-serif;
+            padding: 50px 7%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            text-align: center;
+            color: #a79fd1;
+            margin-bottom: 45px;
+        }
+
+        .comics {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .comic {
+            background: #141026;
+            border: 1px solid rgba(139,61,255,0.28);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .comic:hover {
+            transform: translateY(-8px);
+            border-color: #ec4899;
+        }
+
+        .comic img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .comic h2 {
+            font-size: 20px;
+            padding: 18px 18px 5px;
+        }
+
+        .comic p {
+            color: #9d94c2;
+            padding: 0 18px 20px;
+        }
+
+        @media (max-width: 900px) {
+            .comics {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .comics {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="index.html">FANDOM<span>VERSE</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="anime.html">Anime</a>
+      <a href="gaming.html">Gaming</a>
+      <a href="movies.html">Movies</a>
+      <a href="tvshows.html">TV Shows</a>
+      <a href="kpop.html">K-Pop</a>
+      <a href="comics.html">Comics</a>
+      <a href="manga.html">Manga</a>
+      <a href="outfits.html">Outfits</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <form class="nav-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="Search FandomVerse..." aria-label="Search FandomVerse">
+        <button type="submit" aria-label="Search">🔍</button>
+      </form>
+      <a href="bookmarks.html" class="nav-icon-btn" title="My Bookmarks">🔖</a>
+      <button type="button" class="nav-icon-btn" onclick="showMessage('This is a UI preview only. Login is not implemented in this demo.')" title="Login">👤</button>
+    </div>
+  </nav>
+</header>
+
+<h1>Power Comics</h1>
+    <p class="intro">Discover the most powerful comic heroes</p>
+
+    <div class="comics">
+
+        <div class="comic">
+            <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2022/08/Superman-13-Cover-DC-Comics.jpg?w=1200&h=675&fit=crop" alt="">
+            <h2>Superman</h2>
+            <p>Super strength & flight</p>
+        </div>
+
+        <div class="comic">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Wxfg3vn-BD2dYDid6LhQ_HtSxTeTik6wCX-PV5De2g&s" alt="Thor ">
+            <h2>Thor</h2>
+            <p>God of Thunder</p>
+        </div>
+
+        <div class="comic">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ4e9bz4Khs-hA8nmGB7O-HjrRDw3ViIFwh9jxhd18Bk0zWLwX0NYqCIE&s=10" alt="Hulk">
+            <h2>Hulk</h2>
+            <p>Unlimited strength</p>
+        </div>
+
+        <div class="comic">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS24FJxCFm7NogUIzZ6KvFXeQoLNsJQbkU-93-KytbUjgzrvKklShi_9AkU&s=10" alt="Wonder Woman">
+            <h2>Wonder Woman</h2>
+            <p>Amazon warrior</p>
+        </div>
+
+        <div class="comic">
+            <img src="https://comicvine.gamespot.com/a/uploads/scale_small/12/124259/8459983-rco031_1650495781.jpg" alt="Captain America">
+            <h2>Captain America</h2>
+            <p>Super soldier</p>
+        </div>
+
+        <div class="comic">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY-t5Sk62sq3nRDita7t9DQiTOw0tJ4JPUyPhCJ9di7T6ceNjrMGexIDs&s=10" alt="The Flash">
+            <h2>The Flash</h2>
+            <p>Super speed</p>
+        </div>
+
+        <div class="comic">
+            <img src="https://static.wikia.nocookie.net/doublaze/images/e/e6/Black_Panther.jpg/revision/latest/scale-to-width-down/343?cb=20181025022325" alt="Black Panther">
+            <h2>Black Panther</h2>
+            <p>Enhanced warrior</p>
+        </div>
+
+        <div class="comic">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk-2NBMJtGL1cOX7nFhSuZ0I1xnYjAy6IoMBHAg8lnjRUFP4M1xvyU_ws&s=10" alt="Iron Man">
+            <h2>Iron Man</h2>
+            <p>Advanced technology</p>
+        </div>
+
+    </div>
+
+<footer>
+  <p>&copy; 2026 FandomVerse</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

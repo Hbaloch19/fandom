@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmarks | FandomVerse</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="index.html">FANDOM<span>VERSE</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="anime.html">Anime</a>
+      <a href="gaming.html">Gaming</a>
+      <a href="movies.html">Movies</a>
+      <a href="tvshows.html">TV Shows</a>
+      <a href="kpop.html">K-Pop</a>
+      <a href="comics.html">Comics</a>
+      <a href="manga.html">Manga</a>
+      <a href="outfits.html">Outfits</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <form class="nav-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="Search FandomVerse..." aria-label="Search FandomVerse">
+        <button type="submit" aria-label="Search">🔍</button>
+      </form>
+      <a href="bookmarks.html" class="nav-icon-btn" title="My Bookmarks">🔖</a>
+      <button type="button" class="nav-icon-btn" onclick="showMessage('This is a UI preview only. Login is not implemented in this demo.')" title="Login">👤</button>
+    </div>
+  </nav>
+</header>
+
+<section class="page-header">
+  <p class="tag">YOUR SAVED CONTENT</p>
+  <h1>BOOKMARKS</h1>
+  <p>Saved in your browser's local storage. Personal notes last for this session only.</p>
+</section>
+
+<section class="section">
+  <div style="text-align:center; margin-bottom:35px;">
+    <button type="button" id="export-bookmarks-btn" class="btn">EXPORT AS TEXT</button>
+  </div>
+  <div class="grid-3" id="bookmarks-list"></div>
+</section>
+
+<footer>
+  <p>© 2026 FandomVerse</p>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/dynamic.js"></script>
+
+<script>fvRenderBookmarksPage();</script>
+</body>
+</html>

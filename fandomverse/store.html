@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store | FandomVerse</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="index.html">FANDOM<span>VERSE</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="anime.html">Anime</a>
+      <a href="gaming.html">Gaming</a>
+      <a href="movies.html">Movies</a>
+      <a href="tvshows.html">TV Shows</a>
+      <a href="kpop.html">K-Pop</a>
+      <a href="comics.html">Comics</a>
+      <a href="manga.html">Manga</a>
+      <a href="outfits.html">Outfits</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <form class="nav-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="Search FandomVerse..." aria-label="Search FandomVerse">
+        <button type="submit" aria-label="Search">🔍</button>
+      </form>
+      <a href="bookmarks.html" class="nav-icon-btn" title="My Bookmarks">🔖</a>
+      <button type="button" class="nav-icon-btn" onclick="showMessage('This is a UI preview only. Login is not implemented in this demo.')" title="Login">👤</button>
+    </div>
+  </nav>
+</header>
+
+<section class="page-header">
+  <p class="tag">MERCHANDISE SHOWCASE</p>
+  <h1>STORE</h1>
+  <p>Browse merch from every fandom and add items to your cart. Checkout is not included in this demo.</p>
+</section>
+
+<section class="section">
+  <div class="chip-row" id="chip-row"></div>
+  <div class="store-layout">
+    <div class="grid-3" id="store-container"></div>
+    <div class="cart-box">
+      <h3>🛒 Your Cart</h3>
+      <div id="cart-items"></div>
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cart-total-value">$0.00</span>
+      </div>
+      <button type="button" id="clear-cart-btn" class="btn small secondary" style="margin-top:15px; width:100%;">CLEAR CART</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 FandomVerse</p>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/dynamic.js"></script>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  fvRenderStore("store-container", params.get("cat") || "");
+</script>
+</body>
+</html>

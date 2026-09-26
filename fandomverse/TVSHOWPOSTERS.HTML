@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TV Show Posters | FandomVerse</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background:
+                radial-gradient(circle at 85% 0%, rgba(106,45,255,0.25), transparent 40%),
+                radial-gradient(circle at 0% 100%, rgba(255,46,196,0.18), transparent 40%),
+                #06050f;
+
+            color: #f5f3ff;
+            font-family: Arial, sans-serif;
+            padding: 50px 7%;
+        }
+
+        /* PAGE HEADER */
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .page-header h1 {
+            font-size: 48px;
+            letter-spacing: 3px;
+            margin-bottom: 12px;
+        }
+
+        .page-header h1 span {
+            color: #ff2ec4;
+        }
+
+        .page-header p {
+            color: #aaa1c9;
+            font-size: 17px;
+        }
+
+        /* TV SHOW GRID */
+
+        .show-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        /* SHOW CARD */
+
+        .show-card {
+            position: relative;
+            background: #121022;
+            border: 1px solid rgba(139,61,255,0.3);
+            border-radius: 14px;
+            overflow: hidden;
+
+            box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+
+            transition: 0.35s ease;
+        }
+
+        .show-card:hover {
+            transform: translateY(-10px) scale(1.02);
+
+            border-color: #ff2ec4;
+
+            box-shadow:
+                0 15px 40px rgba(123,47,247,0.3),
+                0 0 25px rgba(255,46,196,0.18);
+        }
+
+        /* POSTER */
+
+        .show-poster {
+            position: relative;
+            width: 100%;
+            height: 430px;
+            overflow: hidden;
+        }
+
+        .show-poster img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+
+            transition: 0.5s ease;
+        }
+
+        .show-card:hover .show-poster img {
+            transform: scale(1.08);
+        }
+
+        /* IMAGE OVERLAY */
+
+        .show-poster::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    to top,
+                    rgba(6,5,15,0.95),
+                    rgba(6,5,15,0.05) 65%
+                );
+        }
+
+        /* TV SHOW TAG */
+
+        .show-tag {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+
+            z-index: 2;
+
+            padding: 7px 13px;
+
+            background: rgba(255,46,196,0.9);
+            color: white;
+
+            font-size: 11px;
+            font-weight: bold;
+
+            border-radius: 20px;
+            letter-spacing: 1px;
+        }
+
+        /* SHOW INFO */
+
+        .show-info {
+            padding: 20px;
+        }
+
+        .show-info h2 {
+            font-size: 22px;
+            margin-bottom: 7px;
+        }
+
+        .show-type {
+            color: #ff2ec4;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 12px;
+
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .show-info p {
+            color: #9e96bb;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .explore {
+            display: inline-block;
+            margin-top: 15px;
+
+            color: #8f65ff;
+            font-size: 13px;
+            font-weight: bold;
+
+            text-decoration: none;
+
+            transition: 0.3s;
+        }
+
+        .explore:hover {
+            color: #ff2ec4;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 1100px) {
+            .show-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 800px) {
+            .show-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 550px) {
+
+            body {
+                padding: 35px 5%;
+            }
+
+            .show-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .page-header h1 {
+                font-size: 35px;
+            }
+
+            .show-poster {
+                height: 450px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- PAGE HEADER -->
+
+    <div class="page-header">
+
+        <h1>
+            <span>TV SHOW</span> POSTERS
+        </h1>
+
+        <p>
+            Explore iconic TV shows, unforgettable characters and legendary stories.
+        </p>
+
+    </div>
+
+
+    <!-- TV SHOW POSTERS -->
+
+    <div class="show-grid">
+
+
+        <!-- 1 STRANGER THINGS -->
+
+        <div class="show-card">
+
+            <div class="show-poster">
+
+                <span class="show-tag">
+                    TV SHOW
+                </span>
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQFeeFYeFU59dPufKZkEfteg035kUSpRNjpVqgAOvschKLqrvw8drRoewO&s=10"
+                    alt="Stranger Things">
+
+            </div>
+
+            <div class="show-info">
+
+                <h2>Stranger Things</h2>
+
+                <div class="show-type">
+                    Sci-Fi • Horror
+                </div>
+
+                <p>
+                    A group of friends uncover supernatural mysteries
+                    and strange events in the town of Hawkins.
+                </p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 2 WEDNESDAY -->
+
+        <div class="show-card">
+
+            <div class="show-poster">
+
+                <span class="show-tag">
+                    TV SHOW
+                </span>
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7qQTS1SrbKBC0ZIKPNW5sUP5DxcVY50t14F7c4R3obA&s=10"
+                    alt="Wednesday">
+
+            </div>
+
+            <div class="show-info">
+
+                <h2>Wednesday</h2>
+
+                <div class="show-type">
+                    Mystery • Comedy
+                </div>
+
+                <p>
+                    Wednesday Addams investigates mysterious events
+                    while attending Nevermore Academy.
+                </p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 3 GAME OF THRONES -->
+
+        <div class="show-card">
+
+            <div class="show-poster">
+
+                <span class="show-tag">
+                    TV SHOW
+                </span>
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT3mLF9QxI_JooOnCVlkm8oqdlG2lGENP6HlQeYnus_g&s=10"
+                    alt="Game of Thrones">
+
+            </div>
+
+            <div class="show-info">
+
+                <h2>Game of Thrones</h2>
+
+                <div class="show-type">
+                    Fantasy • Drama
+                </div>
+
+                <p>
+                    Noble families fight for power while an ancient
+                    threat rises beyond the Wall.
+                </p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 4 PEAKY BLINDERS -->
+
+        <div class="show-card">
+
+            <div class="show-poster">
+
+                <span class="show-tag">
+                    TV SHOW
+                </span>
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA9Hdq-RdL-ZGwLmwbMvlvd7xt1LZbU2vpq3Fi5sCMDA&s=10"
+                    alt="Peaky Blinders">
+
+            </div>
+
+            <div class="show-info">
+
+                <h2>Peaky Blinders</h2>
+
+                <div class="show-type">
+                    Crime • Drama
+                </div>
+
+                <p>
+                    The Shelby family builds its empire while
+                    facing dangerous rivals and powerful enemies.
+                </p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 5 MONEY HEIST -->
+
+        <div class="show-card">
+
+            <div class="show-poster">
+
+                <span class="show-tag">
+                    TV SHOW
+                </span>
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ETU_lCBP3N9uhutRCjM65pb7-tdSVxlpjNBKTii0mQ&s=10"
+                    alt="Money Heist">
+
+            </div>
+
+            <div class="show-info">
+
+                <h2>Money Heist</h2>
+
+                <div class="show-type">
+                    Crime • Thriller
+                </div>
+
+                <p>
+                    A mastermind assembles a team for ambitious
+                    heists against powerful institutions.
+                </p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 6 THE BOYS -->
+
+        <div class="show-card">
+
+            <div class="show-poster">
+
+                <span class="show-tag">
+                    TV SHOW
+                </span>
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL54wGYyU_CtOQ2Eut93ibUJoaD4g3wOI51Yps_1-Sow&s=10"
+                    alt="The Boys">
+
+            </div>
+
+            <div class="show-info">
+
+                <h2>The Boys</h2>
+
+                <div class="show-type">
+                    Action • Superhero
+                </div>
+
+                <p>
+                    A group of vigilantes takes on powerful superheroes
+                    who abuse their abilities.
+                </p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 7 BREAKING BAD -->
+
+        <div class="show-card">
+
+            <div class="show-poster">
+
+                <span class="show-tag">
+                    TV SHOW
+                </span>
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdpBzurQ-SSvs4HhooLL6Uc3gu-_T-ewAZ_TLBianv0g&s"
+                    alt="Breaking Bad">
+
+            </div>
+
+            <div class="show-info">
+
+                <h2>Breaking Bad</h2>
+
+                <div class="show-type">
+                    Crime • Drama
+                </div>
+
+                <p>
+                    A chemistry teacher enters the dangerous world
+                    of the illegal drug trade.
+                </p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 8 THE WALKING DEAD -->
+
+        <div class="show-card">
+
+            <div class="show-poster">
+
+                <span class="show-tag">
+                    TV SHOW
+                </span>
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9EgdiekZK0RisN-tXW95jTJrdzeRjW5w8Yv1ucwD8pA&s=10"
+                    alt="The Walking Dead">
+
+            </div>
+
+            <div class="show-info">
+
+                <h2>The Walking Dead</h2>
+
+                <div class="show-type">
+                    Horror • Drama
+                </div>
+
+                <p>
+                    Survivors struggle to stay alive in a world
+                    overrun by mysterious undead creatures.
+                </p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>
+```

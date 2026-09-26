@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Action & Adventure Anime | FandomVerse</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background:
+            radial-gradient(circle at 85% 0%, rgba(106,45,255,0.25), transparent 40%),
+            radial-gradient(circle at 0% 100%, rgba(255,46,196,0.18), transparent 40%),
+            #06050f;
+        color: #f5f3ff;
+        font-family: Arial, sans-serif;
+        padding: 50px 7%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+
+    .intro {
+        text-align: center;
+        color: #a79fd1;
+        margin-bottom: 45px;
+    }
+
+    .anime-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+
+    .anime-card {
+        background: #141026;
+        border: 1px solid rgba(139,61,255,0.28);
+        border-radius: 12px;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .anime-card:hover {
+        transform: translateY(-8px);
+        border-color: #8b5cf6;
+        box-shadow: 0 10px 30px rgba(139, 92, 246, 0.15);
+    }
+
+    /* YouTube Video */
+
+    .video-container {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        background: #000;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        display: block;
+    }
+
+    .anime-card h2 {
+        font-size: 20px;
+        padding: 18px 18px 5px;
+    }
+
+    .anime-card p {
+        color: #9d94c2;
+        padding: 0 18px 20px;
+        line-height: 1.5;
+    }
+
+
+    /* Tablet */
+
+    @media (max-width: 900px) {
+
+        .anime-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+    }
+
+
+    /* Mobile */
+
+    @media (max-width: 600px) {
+
+        body {
+            padding: 35px 5%;
+        }
+
+        .anime-grid {
+            grid-template-columns: 1fr;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+    }
+
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="index.html">FANDOM<span>VERSE</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="anime.html">Anime</a>
+      <a href="gaming.html">Gaming</a>
+      <a href="movies.html">Movies</a>
+      <a href="tvshows.html">TV Shows</a>
+      <a href="kpop.html">K-Pop</a>
+      <a href="comics.html">Comics</a>
+      <a href="manga.html">Manga</a>
+      <a href="outfits.html">Outfits</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <form class="nav-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="Search FandomVerse..." aria-label="Search FandomVerse">
+        <button type="submit" aria-label="Search">🔍</button>
+      </form>
+      <a href="bookmarks.html" class="nav-icon-btn" title="My Bookmarks">🔖</a>
+      <button type="button" class="nav-icon-btn" onclick="showMessage('This is a UI preview only. Login is not implemented in this demo.')" title="Login">👤</button>
+    </div>
+  </nav>
+</header>
+
+<h1>ACTION &amp; ADVENTURE</h1>
+
+<p class="intro">
+    Where heroes rise, battles begin and legendary adventures unfold
+</p>
+
+
+<div class="anime-grid">
+
+
+    <!-- ANIME 1 - JUJUTSU KAISEN -->
+
+    <div class="anime-card">
+
+        <div class="video-container">
+
+            <iframe
+                src="https://www.youtube.com/embed/RYI-WG_HFV8"
+                title="Jujutsu Kaisen Season 3"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <h2>Jujutsu Kaisen</h2>
+
+        <p>
+            Powerful sorcerers battle dangerous cursed spirits.
+        </p>
+
+    </div>
+
+
+    <!-- ANIME 2 - ONE PIECE -->
+
+    <div class="anime-card">
+
+        <div class="video-container">
+
+            <iframe
+                src="https://www.youtube.com/embed/3Gmo0EXHyKg?si=/VIDEO_ID_2"
+                title="One Piece"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <h2>One Piece</h2>
+
+        <p>
+            Join Luffy and his crew on an incredible journey across the seas.
+        </p>
+
+    </div>
+
+
+    <!-- ANIME 3 - DRAGON BALL -->
+
+    <div class="anime-card">
+
+        <div class="video-container">
+
+            <iframe
+                src="https://www.youtube.com/embed/sxufB6DxXk0?si=/VIDEO_ID_3"
+                title="Dragon Ball"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <h2>Dragon Ball</h2>
+
+        <p>
+            Powerful warriors, legendary transformations and epic battles.
+        </p>
+
+    </div>
+
+
+    <!-- ANIME 4 - ATTACK ON TITAN -->
+
+    <div class="anime-card">
+
+        <div class="video-container">
+
+            <iframe
+                src="https://www.youtube.com/embed/LV-nazLVmgo?si=/VIDEO_ID_4"
+                title="Attack on Titan"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <h2>Attack on Titan</h2>
+
+        <p>
+            Humanity fights for survival against terrifying Titans.
+        </p>
+
+    </div>
+
+
+    <!-- ANIME 5 - DEMON SLAYER -->
+
+    <div class="anime-card">
+
+        <div class="video-container">
+
+            <iframe
+                src="https://www.youtube.com/embed/x7uLutVRBfI?si=/VIDEO_ID_5"
+                title="Demon Slayer"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <h2>Demon Slayer</h2>
+
+        <p>
+            Tanjiro's journey filled with sword fights, demons and adventure.
+        </p>
+
+    </div>
+
+
+    <!-- ANIME 6 - NARUTO -->
+
+    <div class="anime-card">
+
+        <div class="video-container">
+
+            <iframe
+                src="https://www.youtube.com/embed/22R0j8UKRzY?si=/VIDEO_ID_6"
+                title="Naruto"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <h2>Naruto</h2>
+
+        <p>
+            Epic ninja battles, powerful techniques and unforgettable adventures.
+        </p>
+
+    </div>
+
+
+    <!-- ANIME 7 - MY HERO ACADEMIA -->
+
+    <div class="anime-card">
+
+        <div class="video-container">
+
+            <iframe
+                src="https://www.youtube.com/embed/EPVkcwyLQQ8?si=/VIDEO_ID_7"
+                title="My Hero Academia"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <h2>My Hero Academia</h2>
+
+        <p>
+            Young heroes train and fight to protect the world.
+        </p>
+
+    </div>
+
+
+    <!-- ANIME 8 - BLEACH -->
+
+    <div class="anime-card">
+
+        <div class="video-container">
+
+            <iframe
+                src="https://www.youtube.com/embed/Hb57fdPj7LU?si=VIDEO_ID_8"
+                title="Bleach"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <h2>Bleach</h2>
+
+        <p>
+            Ichigo's journey as a Soul Reaper is full of action and adventure.
+        </p>
+
+    </div>
+
+
+</div>
+
+<footer>
+  <p>&copy; 2026 FandomVerse</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

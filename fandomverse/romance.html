@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romance Comics | FandomVerse</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background:
+            radial-gradient(circle at 85% 0%, rgba(106,45,255,0.25), transparent 40%),
+            radial-gradient(circle at 0% 100%, rgba(255,46,196,0.18), transparent 40%),
+            #06050f;
+        color: #f5f3ff;
+        font-family: Arial, sans-serif;
+        padding: 50px 7%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+
+    .intro {
+        text-align: center;
+        color: #a79fd1;
+        margin-bottom: 45px;
+    }
+
+    .comics {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+
+    .comic {
+        background: #141026;
+        border: 1px solid rgba(139,61,255,0.28);
+        border-radius: 12px;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .comic:hover {
+        transform: translateY(-8px);
+        border-color: #ec4899;
+    }
+
+    .comic img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .comic h2 {
+        font-size: 20px;
+        padding: 18px 18px 5px;
+    }
+
+    .comic p {
+        color: #9d94c2;
+        padding: 0 18px 20px;
+    }
+
+    @media (max-width: 900px) {
+        .comics {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 600px) {
+        .comics {
+            grid-template-columns: 1fr;
+        }
+
+        h1 {
+            font-size: 35px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="index.html">FANDOM<span>VERSE</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="anime.html">Anime</a>
+      <a href="gaming.html">Gaming</a>
+      <a href="movies.html">Movies</a>
+      <a href="tvshows.html">TV Shows</a>
+      <a href="kpop.html">K-Pop</a>
+      <a href="comics.html">Comics</a>
+      <a href="manga.html">Manga</a>
+      <a href="outfits.html">Outfits</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <form class="nav-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="Search FandomVerse..." aria-label="Search FandomVerse">
+        <button type="submit" aria-label="Search">🔍</button>
+      </form>
+      <a href="bookmarks.html" class="nav-icon-btn" title="My Bookmarks">🔖</a>
+      <button type="button" class="nav-icon-btn" onclick="showMessage('This is a UI preview only. Login is not implemented in this demo.')" title="Login">👤</button>
+    </div>
+  </nav>
+</header>
+
+<h1>ROMANCE COMICS</h1>
+
+<p class="intro">
+    Discover stories of love, relationships and unforgettable moments
+</p>
+
+<div class="comics">
+
+    <!-- COMIC 1 -->
+    <div class="comic">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ6AwdA1TZXLnAZgkmEf3z4uCNuF2GIco8pe0JJqaylCnnEBkDVSzK8LU&s=10" alt="Heartstopper">
+        <h2>Heartstopper</h2>
+        <p>A beautiful story about friendship, love and discovering yourself.</p>
+    </div>
+
+    <!-- COMIC 2 -->
+    <div class="comic">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPm9bM81X3Wt6X-PJdD_2f-DDcStUTCpOPZg8NOzEDxw&s" alt="Lore Olympus">
+        <h2>Lore Olympus</h2>
+        <p>A modern retelling of the legendary romance between Hades and Persephone.</p>
+    </div>
+
+    <!-- COMIC 3 -->
+    <div class="comic">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5B46YKXdLk1lV5vlb92-D9S2f_LZzPY03SCE9Qgu8RWx4GUUv07okoc0&s=10" alt="Blankets">
+        <h2>Blankets</h2>
+        <p>A heartfelt graphic novel about first love, family and growing up.</p>
+    </div>
+
+    <!-- COMIC 4 -->
+    <div class="comic">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSceAT1xbHVNQ9gKTTojAKvwGdqV7c8-zJxiZnfQ_9ZH0mw9eWY4g55DKk&s=10" alt="Blue Is the Warmest Color">
+        <h2>Blue Is the Warmest Color</h2>
+        <p>A touching story about love, identity and emotional connection.</p>
+    </div>
+
+    <!-- COMIC 5 -->
+    <div class="comic">
+        <img src="https://i.pinimg.com/736x/e8/21/62/e82162b51f790825cf82dcb42411079c.jpg" alt="Sunstone">
+        <h2>Sunstone</h2>
+        <p>A relationship-focused story about love, trust and emotional discovery.</p>
+    </div>
+
+    <!-- COMIC 6 -->
+    <div class="comic">
+        <img src="https://m.media-amazon.com/images/I/81GwfgNBy2L._AC_UF350,350_QL80_.jpg" alt="Strangers in Paradise">
+        <h2>Strangers in Paradise</h2>
+        <p>A memorable romance filled with friendship, drama and complicated emotions.</p>
+    </div>
+
+    <!-- COMIC 7 -->
+    <div class="comic">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlbMku_kytnlP_6OS2k7FBAVAFKV40z8Qhoo-G11VczQ&s=10" alt="Archie">
+        <h2>Archie</h2>
+        <p>A classic comic filled with romance, friendship and teenage adventures.</p>
+    </div>
+
+    <!-- COMIC 8 -->
+    <div class="comic">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS38AfdykWW0bQy154_zcHOl7k8PW--XXt-_uhCMPmFBDXVq-rXIJQEN0Y&s=10" alt="Scott Pilgrim">
+        <h2>Scott Pilgrim</h2>
+        <p>A fun romantic adventure where love comes with unexpected challenges.</p>
+    </div>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 FandomVerse</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

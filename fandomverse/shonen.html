@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shonen Manga | FandomVerse</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background:
+            radial-gradient(circle at 85% 0%, rgba(106,45,255,0.25), transparent 40%),
+            radial-gradient(circle at 0% 100%, rgba(255,46,196,0.18), transparent 40%),
+            #06050f;
+        color: #f5f3ff;
+        font-family: Arial, sans-serif;
+        padding: 50px 7%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+
+    .intro {
+        text-align: center;
+        color: #a79fd1;
+        margin-bottom: 45px;
+    }
+
+    .manga-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+
+    .manga-card {
+        background: #141026;
+        border: 1px solid rgba(139,61,255,0.28);
+        border-radius: 12px;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .manga-card:hover {
+        transform: translateY(-8px);
+        border-color: #f97316;
+    }
+
+    .manga-card img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .manga-card h2 {
+        font-size: 20px;
+        padding: 18px 18px 5px;
+    }
+
+    .manga-card p {
+        color: #9d94c2;
+        padding: 0 18px 20px;
+    }
+
+    @media (max-width: 900px) {
+        .manga-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 600px) {
+        .manga-grid {
+            grid-template-columns: 1fr;
+        }
+
+        h1 {
+            font-size: 35px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="index.html">FANDOM<span>VERSE</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="anime.html">Anime</a>
+      <a href="gaming.html">Gaming</a>
+      <a href="movies.html">Movies</a>
+      <a href="tvshows.html">TV Shows</a>
+      <a href="kpop.html">K-Pop</a>
+      <a href="comics.html">Comics</a>
+      <a href="manga.html">Manga</a>
+      <a href="outfits.html">Outfits</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <form class="nav-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="Search FandomVerse..." aria-label="Search FandomVerse">
+        <button type="submit" aria-label="Search">🔍</button>
+      </form>
+      <a href="bookmarks.html" class="nav-icon-btn" title="My Bookmarks">🔖</a>
+      <button type="button" class="nav-icon-btn" onclick="showMessage('This is a UI preview only. Login is not implemented in this demo.')" title="Login">👤</button>
+    </div>
+  </nav>
+</header>
+
+<h1>SHONEN MANGA</h1>
+
+<p class="intro">
+    Epic battles, powerful heroes and unforgettable journeys
+</p>
+
+<div class="manga-grid">
+
+    <!-- MANGA 1 -->
+    <div class="manga-card">
+        <img src="https://cmsapi-frontend.naruto-official.com/site/api/naruto/Image/get?path=/naruto/en/comics/2022/09/29/ubq1tyQ5SG3QNxww/1.jpg" alt="Naruto Manga">
+        <h2>Naruto</h2>
+        <p>Follow Naruto's journey from a lonely ninja to a legendary shinobi.</p>
+    </div>
+
+    <!-- MANGA 2 -->
+    <div class="manga-card">
+        <img src="https://xla-image-storage.s3.amazonaws.com/1244_700_71e377de-d8e5-4f19-ad2d-241fb18bcb16.jpg?w=3840&q=75" alt="One Piece Manga">
+        <h2>One Piece</h2>
+        <p>Join Luffy and his crew on their quest for the legendary One Piece.</p>
+    </div>
+
+    <!-- MANGA 3 -->
+    <div class="manga-card">
+        <img src="https://en.dragon-ball-official.com/dragonball/jp/news/2021/05/01_08851831_009.png?_=1789299960" alt="Dragon Ball Manga">
+        <h2>Dragon Ball</h2>
+        <p>Goku's incredible journey filled with martial arts and powerful battles.</p>
+    </div>
+
+    <!-- MANGA 4 -->
+    <div class="manga-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt4RE1xWf03FktOy-9pveU7xCUkXIF92sf11rEqllVUqRr70PQPGT0-BgP&s=10" alt="My Hero Academia Manga">
+        <h2>My Hero Academia</h2>
+        <p>Young heroes train to master their Quirks and protect society.</p>
+    </div>
+
+    <!-- MANGA 5 -->
+    <div class="manga-card">
+        <img src="https://i.pinimg.com/originals/bd/58/b2/bd58b22b7e1740a6b5047ab3197d375e.jpg" alt="Demon Slayer Manga">
+        <h2>Demon Slayer</h2>
+        <p>Tanjiro begins his dangerous journey to defeat demons and save Nezuko.</p>
+    </div>
+
+    <!-- MANGA 6 -->
+    <div class="manga-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYYzeiqUolYkUAzhlY4M0p9BJa4EURxOpHV1I7U5vUA8sv8_apNn98x-g&s=10" alt="Jujutsu Kaisen Manga">
+        <h2>Jujutsu Kaisen</h2>
+        <p>Yuji enters the dangerous world of cursed spirits and sorcerers.</p>
+    </div>
+
+    <!-- MANGA 7 -->
+    <div class="manga-card">
+        <img src="https://preview.redd.it/on-a-scale-of-1-10-how-much-will-you-guys-rate-the-art-of-v0-p7lntnkxc9tc1.jpeg?width=640&crop=smart&auto=webp&s=f068967879229b9f34c63c73a9ebe854533876dd" alt="Bleach Manga">
+        <h2>Bleach</h2>
+        <p>Ichigo's journey begins after gaining the powers of a Soul Reaper.</p>
+    </div>
+
+    <!-- MANGA 8 -->
+    <div class="manga-card">
+        <img src="https://i.pinimg.com/236x/8e/66/f3/8e66f3cc095ea11c310ea13de9300fe1.jpg" alt="Black Clover Manga">
+        <h2>Black Clover</h2>
+        <p>Asta fights to become the greatest Magic Knight despite having no magic.</p>
+    </div>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 FandomVerse</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

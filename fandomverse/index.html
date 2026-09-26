@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FandomVerse | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="index.html">FANDOM<span>VERSE</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="anime.html">Anime</a>
+      <a href="gaming.html">Gaming</a>
+      <a href="movies.html">Movies</a>
+      <a href="tvshows.html">TV Shows</a>
+      <a href="kpop.html">K-Pop</a>
+      <a href="comics.html">Comics</a>
+      <a href="manga.html">Manga</a>
+      <a href="outfits.html">Outfits</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <form class="nav-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="Search FandomVerse..." aria-label="Search FandomVerse">
+        <button type="submit" aria-label="Search">🔍</button>
+      </form>
+      <a href="bookmarks.html" class="nav-icon-btn" title="My Bookmarks">🔖</a>
+      <button type="button" class="nav-icon-btn" onclick="showMessage('This is a UI preview only. Login is not implemented in this demo.')" title="Login">👤</button>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <p class="tag">THE PORTAL FOR FANDOM WORLD</p>
+    <h1>ENTER A WORLD<br><span>BEYOND REALITY</span></h1>
+    <p>
+      Anime, gaming, movies, TV shows, K-Pop, comics and manga — every fandom
+      you love, brought together in one visually rich universe.
+    </p>
+
+    <div class="buttons">
+      <a href="anime.html" class="btn">EXPLORE FANDOMS</a>
+      <a href="store.html" class="btn secondary">VIEW STORE</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Explore The Universe</h2>
+  <p class="section-intro">Choose your next adventure.</p>
+
+  <div class="cards cards-7">
+
+    <a href="anime.html" class="card">
+      <div class="card-icon">⚡</div>
+      <h3>ANIME</h3>
+      <p>Discover powerful heroes, epic battles and unforgettable stories.</p>
+    </a>
+
+    <a href="gaming.html" class="card">
+      <div class="card-icon">🎮</div>
+      <h3>GAMING</h3>
+      <p>Esports, open worlds and the games fans can't stop talking about.</p>
+    </a>
+
+    <a href="movies.html" class="card">
+      <div class="card-icon">🎬</div>
+      <h3>MOVIES</h3>
+      <p>Blockbusters, franchises and the biggest screen moments.</p>
+    </a>
+
+    <a href="tvshows.html" class="card">
+      <div class="card-icon">📺</div>
+      <h3>TV SHOWS</h3>
+      <p>Binge-worthy series, seasons and the moments fans replay.</p>
+    </a>
+
+    <a href="kpop.html" class="card">
+      <div class="card-icon">🎤</div>
+      <h3>K-POP</h3>
+      <p>Groups, comebacks and the global charts fans are chasing.</p>
+    </a>
+
+    <a href="manga.html" class="card">
+      <div class="card-icon">📖</div>
+      <h3>MANGA</h3>
+      <p>Explore legendary manga worlds and iconic characters.</p>
+    </a>
+
+    <a href="comics.html" class="card">
+      <div class="card-icon">💥</div>
+      <h3>COMICS</h3>
+      <p>Enter the world of superheroes and comic book legends.</p>
+    </a>
+
+  </div>
+</section>
+
+<section class="section">
+  <h2>Trending Now</h2>
+  <p class="section-intro">Handpicked across every fandom.</p>
+  <div class="content-grid" id="home-trending"></div>
+</section>
+
+<section class="section">
+  <h2>Upcoming Events</h2>
+  <p class="section-intro">Conventions, comebacks and watch parties near you.</p>
+  <div class="content-grid" id="home-events"></div>
+</section>
+
+<section class="section">
+  <h2>More To Explore</h2>
+  <p class="section-intro">Cross-category features, available on every page.</p>
+  <div class="cards">
+    <a href="search.html" class="card">
+      <div class="card-icon">🔎</div>
+      <h3>SEARCH</h3>
+      <p>Find articles, characters and events across all fandoms.</p>
+    </a>
+    <a href="store.html" class="card">
+      <div class="card-icon">🛍️</div>
+      <h3>STORE</h3>
+      <p>Browse officially-styled merch and add it to your cart.</p>
+    </a>
+    <a href="bookmarks.html" class="card">
+      <div class="card-icon">🔖</div>
+      <h3>BOOKMARKS</h3>
+      <p>Save your favorite content and add personal notes.</p>
+    </a>
+    <a href="outfits.html" class="card">
+      <div class="card-icon">👕</div>
+      <h3>OUTFITS</h3>
+      <p>Discover character-inspired outfits and fashion.</p>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 FandomVerse. Portal for Fandom World.</p>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/dynamic.js"></script>
+<script>document.addEventListener("DOMContentLoaded", fvRenderHome);</script>
+</body>
+</html>

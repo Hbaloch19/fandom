@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seinen Manga | FandomVerse</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background:
+            radial-gradient(circle at 85% 0%, rgba(106,45,255,0.25), transparent 40%),
+            radial-gradient(circle at 0% 100%, rgba(255,46,196,0.18), transparent 40%),
+            #06050f;
+        color: #f5f3ff;
+        font-family: Arial, sans-serif;
+        padding: 50px 7%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+
+    .intro {
+        text-align: center;
+        color: #a79fd1;
+        margin-bottom: 45px;
+    }
+
+    .manga-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+
+    .manga-card {
+        background: #141026;
+        border: 1px solid rgba(139,61,255,0.28);
+        border-radius: 12px;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .manga-card:hover {
+        transform: translateY(-8px);
+        border-color: #dc2626;
+    }
+
+    .manga-card img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .manga-card h2 {
+        font-size: 20px;
+        padding: 18px 18px 5px;
+    }
+
+    .manga-card p {
+        color: #9d94c2;
+        padding: 0 18px 20px;
+    }
+
+    @media (max-width: 900px) {
+        .manga-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 600px) {
+        .manga-grid {
+            grid-template-columns: 1fr;
+        }
+
+        h1 {
+            font-size: 35px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="index.html">FANDOM<span>VERSE</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="anime.html">Anime</a>
+      <a href="gaming.html">Gaming</a>
+      <a href="movies.html">Movies</a>
+      <a href="tvshows.html">TV Shows</a>
+      <a href="kpop.html">K-Pop</a>
+      <a href="comics.html">Comics</a>
+      <a href="manga.html">Manga</a>
+      <a href="outfits.html">Outfits</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <form class="nav-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="Search FandomVerse..." aria-label="Search FandomVerse">
+        <button type="submit" aria-label="Search">🔍</button>
+      </form>
+      <a href="bookmarks.html" class="nav-icon-btn" title="My Bookmarks">🔖</a>
+      <button type="button" class="nav-icon-btn" onclick="showMessage('This is a UI preview only. Login is not implemented in this demo.')" title="Login">👤</button>
+    </div>
+  </nav>
+</header>
+
+<h1>SEINEN MANGA</h1>
+
+<p class="intro">
+    Mature stories, deep characters and unforgettable journeys
+</p>
+
+<div class="manga-grid">
+
+    <!-- MANGA 1 -->
+    <div class="manga-card">
+        <img src="https://m.media-amazon.com/images/I/91zRbJkkxJL._AC_UF350,350_QL80_.jpg" alt="Berserk Manga">
+        <h2>Berserk</h2>
+        <p>Guts struggles through a brutal world filled with war, darkness and destiny.</p>
+    </div>
+
+    <!-- MANGA 2 -->
+    <div class="manga-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkXfMlcmSIvMpIiPaWfVBb6_4hhidonNb0dRAIgEMGJg&s=10" alt="Vagabond Manga">
+        <h2>Vagabond</h2>
+        <p>The legendary journey of Miyamoto Musashi and his search for strength.</p>
+    </div>
+
+    <!-- MANGA 3 -->
+    <div class="manga-card">
+        <img src="https://images.pixels.com/images/artworkimages/mediumlarge/3/vagabond-manga-morgan-ruby.jpg" alt="Tokyo Ghoul Manga">
+        <h2>Tokyo Ghoul</h2>
+        <p>Kaneki struggles between his human identity and his new life as a ghoul.</p>
+    </div>
+
+    <!-- MANGA 4 -->
+    <div class="manga-card">
+        <img src="https://i.pinimg.com/736x/b9/c1/87/b9c1874ff4f8e9ff94d0416afc89b0c3.jpg" alt="Monster Manga">
+        <h2>Monster</h2>
+        <p>A psychological thriller surrounding a brilliant doctor and a mysterious killer.</p>
+    </div>
+
+    <!-- MANGA 5 -->
+    <div class="manga-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnwPTjN8Ka24T-7qUxyiwDpz6n-Yg2Lu-AlFg_o97oBR3EKxlBszgbP9I&s=10" alt="20th Century Boys Manga">
+        <h2>20th Century Boys</h2>
+        <p>A mysterious cult and forgotten childhood memories threaten the future.</p>
+    </div>
+
+    <!-- MANGA 6 -->
+    <div class="manga-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO0H6HszSXN8fkj7yeh9iDWkJyrx9gUW-q_IaC5chEpwy7rbs0Mu8Wdpk&s=10" alt="Goodnight Punpun Manga">
+        <h2>Goodnight Punpun</h2>
+        <p>A deeply emotional coming-of-age story about life, relationships and identity.</p>
+    </div>
+
+    <!-- MANGA 7 -->
+    <div class="manga-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9Kmtp8hhgn5yNrc3EMyrykDMHXIoIZZelQ-_2sAmUdu9ZouhrbKTc2UI&s=10" alt="Kingdom Manga">
+        <h2>Kingdom</h2>
+        <p>Young warriors fight through China's brutal Warring States period.</p>
+    </div>
+
+    <!-- MANGA 8 -->
+    <div class="manga-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRExRNN5VJzP9sQ-pL_y-IcAauTaRtjtix2BMC_WUoV9K-SkJwYaEKGW506&s=10" alt="Blame Manga">
+        <h2>Blame!</h2>
+        <p>A mysterious journey through a massive cybernetic world filled with danger.</p>
+    </div>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 FandomVerse</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

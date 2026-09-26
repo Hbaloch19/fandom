@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>4Thrives Esports | FandomVerse</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background:
+                radial-gradient(circle at 85% 0%, rgba(106,45,255,0.25), transparent 40%),
+                radial-gradient(circle at 0% 100%, rgba(255,46,196,0.18), transparent 40%),
+                #06050f;
+
+            color: #f5f3ff;
+            font-family: Arial, sans-serif;
+            padding: 50px 7%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 45px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .intro {
+            text-align: center;
+            color: #a79fd1;
+            margin-bottom: 45px;
+            font-size: 17px;
+        }
+
+        .games {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .game-card {
+            background: #141026;
+            border: 1px solid rgba(139,61,255,0.28);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        .game-card:hover {
+            transform: translateY(-8px);
+            border-color: #ef44c8;
+
+            box-shadow:
+                0 15px 40px rgba(123,47,247,0.25),
+                0 0 20px rgba(255,46,196,0.12);
+        }
+
+        .game-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .game-info {
+            padding: 18px;
+        }
+
+        .game-info h2 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .game-info p {
+            color: #9d94c2;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        .trophy {
+            color: #ffd75a;
+            font-weight: bold;
+        }
+
+        @media (max-width: 1100px) {
+            .games {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .games {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+
+            body {
+                padding: 35px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>4THRIVES ESPORTS</h1>
+
+    <p class="intro">
+        Meet the players and explore their major trophies and achievements
+    </p>
+
+    <div class="games">
+
+        <!-- FALAK -->
+        <a href="falak.html" class="game-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7QxWRXZRsyhfKfHJ6LyZ7sImK6PAj2YuYaNBF3YGpeo3DoJLinLR6nDw&s=10" alt="FALAK">
+
+            <div class="game-info">
+                <h2>FALAK</h2>
+
+                <p>
+                    Falak Sher • Fragger
+                    <br><br>
+
+                    <span class="trophy">🏆 Achievements:</span>
+                    <br>
+                    PMGO 2026 Season 1 – South Asia Finals
+                    <br>
+                    Finals MVP
+                    <br>
+                    Grenade Master – PMGO 2026
+                    <br>
+                    MVP – PMNC Pakistan Spring 2025
+                </p>
+            </div>
+
+        </a>
+
+
+        <!-- IQ -->
+        <a href="iq.html" class="game-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyVkKvN8Z6hvmFOKzZSSOBpF_hN46Taont8qP235L4VA&s=10" alt="IQ">
+
+            <div class="game-info">
+                <h2>IQ</h2>
+
+                <p>
+                    Shayan Asad • Captain
+                    <br><br>
+
+                    <span class="trophy">🏆 Achievement:</span>
+                    <br>
+                    MVP – PUBG Mobile 141 Ultimate Grind
+                    <br>
+                    March 2026
+                </p>
+            </div>
+
+        </a>
+
+
+        <!-- NOCKI -->
+        <a href="nocki.html" class="game-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnSV38QC2yHGQLk7gL9FiTeVF36PKN3YV4caX2hO9YdA&s=10" alt="NOCKi">
+
+            <div class="game-info">
+                <h2>NOCKi</h2>
+
+                <p>
+                    Sameer Khan • Player
+                    <br><br>
+
+                    <span class="trophy">🏆 Team Trophies:</span>
+                    <br>
+                    PMGO 2026 Season 1
+                    <br>
+                    PMGO South Asia Finals 2026
+                </p>
+            </div>
+
+        </a>
+
+
+        <!-- T24 OP -->
+        <a href="t24op.html" class="game-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqqi5u0DmQ4rMNdY4LwJBWC9EmEmRAJCd_toH5dl6-Bg&s=10" alt="T24 OP">
+
+            <div class="game-info">
+                <h2>T24 OP</h2>
+
+                <p>
+                    Hasnain Rehman • Player
+                    <br><br>
+
+                    <span class="trophy">🏆 Team Trophies:</span>
+                    <br>
+                    PUBG Mobile Global Open
+                    <br>
+                    Season 1 – 2026
+                    <br>
+                    South Asia Finals – 2026
+                </p>
+            </div>
+
+        </a>
+
+
+        <!-- HUZAIFA -->
+        <a href="huzaifa.html" class="game-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpgQPIGs5kNxRQOXZ748k3kvyL1AI7qAMk-GKyNQUZLg&s=10" alt="HUZAIFA">
+
+            <div class="game-info">
+                <h2>HUZAIFA</h2>
+
+                <p>
+                    Muhammad Huzaifa • Player
+                    <br><br>
+
+                    <span class="trophy">🏆 Achievement:</span>
+                    <br>
+                    Finals MVP – PMGO 2026
+                    <br>
+                    Season 2 South Asia Finals
+                    <br>
+                    Most Elims in a Match
+                </p>
+            </div>
+
+        </a>
+
+
+        <!-- PMGO -->
+        <a href="pmgo.html" class="game-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3pIcc095-0o5nZjFmPJtWxNU0BYmzwwRSm2V1UcsmMA&s=10" alt="PMGO 2026">
+
+            <div class="game-info">
+                <h2>PMGO 2026</h2>
+
+                <p>
+                    <span class="trophy">🏆 CHAMPIONS</span>
+                    <br><br>
+
+                    PUBG Mobile Global Open
+                    <br>
+                    Season 1 – 2026
+                    <br>
+                    Jakarta, Indonesia
+                    <br>
+                    Prize: $62,500
+                </p>
+            </div>
+
+        </a>
+
+
+        <!-- SOUTH ASIA -->
+        <a href="south-asia.html" class="game-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX45QgDblCH8aTY-oH1vquVav9c1hj-UYRix-KGQLLBw&s=10" alt="PMGO South Asia Finals">
+
+            <div class="game-info">
+                <h2>South Asia Finals</h2>
+
+                <p>
+                    <span class="trophy">🏆 CHAMPIONS</span>
+                    <br><br>
+
+                    PMGO 2026 Season 1
+                    <br>
+                    South Asia Finals
+                    <br>
+                    May 2026
+                    <br>
+                    Prize: $9,000
+                </p>
+            </div>
+
+        </a>
+
+
+        <!-- PMNC -->
+        <a href="pmnc.html" class="game-card">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHffmlLgovdrTcNFa8uAW2EYhzkqbC4KsK0up-oWIang&s=10" alt="PMNC Pakistan">
+
+            <div class="game-info">
+                <h2>PMNC Pakistan</h2>
+
+                <p>
+                    <span class="trophy">🏆 CHAMPIONS</span>
+                    <br><br>
+
+                    PUBG Mobile National Championship
+                    <br>
+                    Pakistan Spring 2025
+                    <br>
+                    1st Place
+                </p>
+            </div>
+
+        </a>
+
+    </div>
+
+</body>
+</html>

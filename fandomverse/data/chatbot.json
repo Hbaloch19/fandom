@@ -1,0 +1,30 @@
+{
+  "greeting": "Hi, I'm the FandomVerse Assistant! Ask me about any fandom, or tap a quick reply below. 👋",
+  "quickReplies": [
+    "What is FandomVerse?",
+    "Show me Anime",
+    "Show me Gaming",
+    "Show me Movies",
+    "Where's the Store?",
+    "How do bookmarks work?"
+  ],
+  "fallback": "I don't have an answer for that yet, but you can use the search bar at the top of any page to look across all fandoms!",
+  "rules": [
+    { "keywords": ["what is fandomverse", "about fandomverse", "what is this site"], "answer": "FandomVerse is a single portal that brings together Anime, Gaming, Movies, TV Shows, K-Pop, Comics and Manga — articles, characters, events, media and merch, all in one place." },
+    { "keywords": ["anime"], "answer": "The Anime hub has featured articles, 5 character profiles, an image gallery, trailers and merch. Want me to take you there?", "link": "anime.html", "linkText": "Go to Anime" },
+    { "keywords": ["gaming", "games"], "answer": "The Gaming hub covers esports, open-world titles and retro classics, plus character profiles and events.", "link": "gaming.html", "linkText": "Go to Gaming" },
+    { "keywords": ["movie", "movies", "film"], "answer": "The Movies hub has box-office news, franchise deep dives and director's-cut features.", "link": "movies.html", "linkText": "Go to Movies" },
+    { "keywords": ["tv show", "tvshow", "tv", "series"], "answer": "The TV Shows hub is full of binge-worthy series, seasons and fan theories.", "link": "tvshows.html", "linkText": "Go to TV Shows" },
+    { "keywords": ["kpop", "k-pop", "k pop"], "answer": "The K-Pop hub tracks comebacks, groups and global charts, with character-style idol profiles.", "link": "kpop.html", "linkText": "Go to K-Pop" },
+    { "keywords": ["comic", "comics"], "answer": "The Comics hub has heroes, villains, powers and legends — pick a card to dive in.", "link": "comics.html", "linkText": "Go to Comics" },
+    { "keywords": ["manga"], "answer": "The Manga library covers Shonen, Seinen, Fantasy and Romance titles.", "link": "manga.html", "linkText": "Go to Manga" },
+    { "keywords": ["store", "shop", "merch", "merchandise", "cart"], "answer": "The Store lets you browse merch from every fandom and add items to a temporary cart. Checkout isn't included in this demo.", "link": "store.html", "linkText": "Go to Store" },
+    { "keywords": ["bookmark", "favorite", "save"], "answer": "Tap the 🔖 icon on any card to bookmark it. Your bookmarks are saved in your browser and you can add personal notes or export the list from the Bookmarks page.", "link": "bookmarks.html", "linkText": "Go to Bookmarks" },
+    { "keywords": ["search", "find"], "answer": "Use the search bar in the top navigation on any page — it searches articles, characters and merch across every fandom at once.", "link": "search.html", "linkText": "Go to Search" },
+    { "keywords": ["event", "events", "convention"], "answer": "Every category page has at least 3 upcoming events — conventions, watch parties and meetups.", "link": "events.html", "linkText": "Go to Events" },
+    { "keywords": ["character", "characters"], "answer": "Every fandom has at least 5 character profiles with bios and traits.", "link": "characters.html", "linkText": "Go to Characters" },
+    { "keywords": ["contact", "support", "help me reach"], "answer": "You can reach the FandomVerse team from the Contact page — it includes a map of our location.", "link": "contact.html", "linkText": "Go to Contact" },
+    { "keywords": ["hello", "hi", "hey"], "answer": "Hey there! What fandom are you in the mood for today — Anime, Gaming, Movies, TV Shows, K-Pop, Comics or Manga?" },
+    { "keywords": ["thank"], "answer": "Anytime! Enjoy exploring the multiverse. 🌌" }
+  ]
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heroes & Comics</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background:
+            radial-gradient(circle at 85% 0%, rgba(106,45,255,0.25), transparent 40%),
+            radial-gradient(circle at 0% 100%, rgba(255,46,196,0.18), transparent 40%),
+            #06050f;
+            color: #f5f3ff;
+            font-family: Arial, sans-serif;
+            padding: 50px 7%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            text-align: center;
+            color: #a79fd1;
+            margin-bottom: 45px;
+        }
+
+        .comics {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .comic {
+            background: #141026;
+            border: 1px solid rgba(139,61,255,0.28);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .comic:hover {
+            transform: translateY(-8px);
+            border-color: #8b5cf6;
+        }
+
+        .comic img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .comic h2 {
+            font-size: 20px;
+            padding: 18px 18px 5px;
+        }
+
+        .comic p {
+            color: #9d94c2;
+            padding: 0 18px 20px;
+        }
+
+        @media (max-width: 900px) {
+            .comics {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .comics {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="index.html">FANDOM<span>VERSE</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="anime.html">Anime</a>
+      <a href="gaming.html">Gaming</a>
+      <a href="movies.html">Movies</a>
+      <a href="tvshows.html">TV Shows</a>
+      <a href="kpop.html">K-Pop</a>
+      <a href="comics.html">Comics</a>
+      <a href="manga.html">Manga</a>
+      <a href="outfits.html">Outfits</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <form class="nav-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="Search FandomVerse..." aria-label="Search FandomVerse">
+        <button type="submit" aria-label="Search">🔍</button>
+      </form>
+      <a href="bookmarks.html" class="nav-icon-btn" title="My Bookmarks">🔖</a>
+      <button type="button" class="nav-icon-btn" onclick="showMessage('This is a UI preview only. Login is not implemented in this demo.')" title="Login">👤</button>
+    </div>
+  </nav>
+</header>
+
+<h1>Heroes & Comics</h1>
+    <p class="intro">Choose your favorite comic hero</p>
+
+    <div class="comics">
+
+        <div class="comic">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS10hp4wOpSmFYc14vXVRMGR6kGY0mxMj2ASh1-SxVM2eUnKlukj9eSdd0&s=10" alt="Spider-Man">
+            <h2>Spider-Man</h2>
+            <p>Web-slinging hero</p>
+        </div>
+
+        <div class="comic">
+            <img src="https://m.media-amazon.com/images/I/61mmmZnhBxL._AC_UF894,1000_QL80_.jpg" alt="Batman">
+            <h2>Batman</h2>
+            <p>The Dark Knight</p>
+        </div>
+
+        <div class="comic">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4QFDkoJIiXatc6Ntcna12d-jfnPKiBmRLkZdnBlAb_ovwDFADrzydiKU&s=10" alt="Superman">
+            <h2>Superman</h2>
+            <p>Man of Steel</p>
+        </div>
+
+        <div class="comic">
+            <img src="https://comicvine.gamespot.com/a/uploads/scale_small/11174/111743204/9372918-invincibleironman%231vol5kaelngu.jpg" alt="Iron Man">
+            <h2>Iron Man</h2>
+            <p>Genius hero</p>
+        </div>
+
+        <div class="comic">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmqJjSov60EwGFZ8LR8X1h0wHC4bJIrGNtZtbyzbIqu7YfYI4pl3o9Fv9b&s=10" alt="Captain America">
+            <h2>Captain America</h2>
+            <p>Super soldier</p>
+        </div>
+
+        <div class="comic">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCwmxaNI9zfpEwpN6y3GiV_vwZUGOVtMmK-ndrWeej9iXYP-FrJ9hom64&s=10" alt="Thor">
+            <h2>Thor</h2>
+            <p>God of Thunder</p>
+        </div>
+
+        <div class="comic">
+            <img src="https://www.cgc-emporium.com/cdn/shop/products/STL119605.jpg?v=1559408758" alt="Hulk">
+            <h2>Hulk</h2>
+            <p>The incredible hero</p>
+        </div>
+
+        <div class="comic">
+            <img src="https://shop.thirdeyecomics.com/cdn/shop/files/marvel-comic-books-incentives-wolverine-revenge-1-1-50-incv-pablo-villalobos-virgin-variant-75960620995800118-prh-75960620995800118-41688080318716.jpg?v=1762973787" alt="Wolverine">
+            <h2>Wolverine</h2>
+            <p>Mutant warrior</p>
+        </div>
+
+    </div>
+
+<footer>
+  <p>&copy; 2026 FandomVerse</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

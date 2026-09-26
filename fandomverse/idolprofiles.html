@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>K-Pop Media Gallery | FandomVerse</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background:
+                radial-gradient(circle at 85% 0%, rgba(106,45,255,0.25), transparent 40%),
+                radial-gradient(circle at 0% 100%, rgba(255,46,196,0.18), transparent 40%),
+                #06050f;
+
+            color: #f5f3ff;
+            font-family: Arial, sans-serif;
+            padding: 50px 7%;
+        }
+
+        /* HEADER */
+        h1 {
+            text-align: center;
+            font-size: 45px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .intro {
+            text-align: center;
+            color: #a79fd1;
+            margin-bottom: 45px;
+            font-size: 17px;
+        }
+
+        /* GALLERY */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        /* CARD */
+        .media-card {
+            position: relative;
+            background: #141026;
+            border: 1px solid rgba(139,61,255,0.28);
+            border-radius: 14px;
+            overflow: hidden;
+            transition: 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        }
+
+        .media-card:hover {
+            transform: translateY(-8px);
+            border-color: #ef44c8;
+
+            box-shadow:
+                0 15px 40px rgba(123,47,247,0.25),
+                0 0 25px rgba(255,46,196,0.15);
+        }
+
+        /* IMAGE */
+        .media-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+            transition: 0.4s ease;
+        }
+
+        .media-card:hover img {
+            transform: scale(1.06);
+        }
+
+        /* BADGE */
+        .badge {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+
+            background: linear-gradient(
+                135deg,
+                #7b2ff7,
+                #ff2ec4
+            );
+
+            color: white;
+            padding: 7px 13px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            z-index: 2;
+        }
+
+        /* INFO */
+        .media-info {
+            padding: 18px;
+        }
+
+        .media-info h2 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .media-info p {
+            color: #9d94c2;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* BUTTON */
+        .view-btn {
+            display: inline-block;
+            margin-top: 14px;
+            padding: 9px 15px;
+
+            color: white;
+            text-decoration: none;
+
+            border: 1px solid #7b2ff7;
+            border-radius: 7px;
+
+            font-size: 13px;
+            transition: 0.3s;
+        }
+
+        .view-btn:hover {
+            background: linear-gradient(
+                135deg,
+                #7b2ff7,
+                #ff2ec4
+            );
+
+            border-color: transparent;
+        }
+
+        /* TABLET */
+        @media (max-width: 1100px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+
+            body {
+                padding: 35px 5%;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+
+            .media-card img {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>K-POP IDEAL PROFILES</h1>
+
+    <p class="intro">
+        Explore stunning moments, performances and memories from the K-Pop universe
+    </p>
+
+    <div class="gallery">
+
+        <!-- CARD 1 -->
+        <div class="media-card">
+
+            <span class="badge">BTS</span>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIG32P9NRSNv3Dw5ePw-hoTwXPPyEWyy0tzCNPscu2N4o8Thitq7AyFSL6&s=10" alt="BTS">
+
+            <div class="media-info">
+                <h2>BTS</h2>
+
+                <p>
+                    Explore iconic moments and unforgettable performances from BTS.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 2 -->
+        <div class="media-card">
+
+            <span class="badge">BLACKPINK</span>
+
+            <img src="https://static.wikia.nocookie.net/blinks/images/a/a1/BLACKPINK_Visual_Poster.jpeg/revision/latest?cb=20260318114156" alt="BLACKPINK">
+
+            <div class="media-info">
+                <h2>BLACKPINK</h2>
+
+                <p>
+                    Discover powerful performances and memorable BLACKPINK moments.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 3 -->
+        <div class="media-card">
+
+            <span class="badge">TWICE</span>
+
+            <img src="https://media.gettyimages.com/id/1202951846/photo/seoul-south-korea-girl-group-twice-attend-the-29th-seoul-music-awards-at-gocheok-sky-dome-on.jpg?s=612x612&w=gi&k=20&c=-P7j8oOWMRKUFm9B_smiGRBQKVlVLV5fGXxcNEsFWuE=" alt="TWICE">
+
+            <div class="media-info">
+                <h2>TWICE</h2>
+
+                <p>
+                    Explore TWICE performances, photos and special moments.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 4 -->
+        <div class="media-card">
+
+            <span class="badge">STRAY KIDS</span>
+
+            <img src="https://media.gettyimages.com/id/1677104831/photo/newark-new-jersey-bang-chan-lee-know-felix-han-seungmin-changbin-hyunjin-and-i-n-of-stray.jpg?s=612x612&w=gi&k=20&c=-ryOwWabP8oVe1k3_GQvJgqxAGjJcUkJoh30Y_zC-sI=" alt="Stray Kids">
+
+            <div class="media-info">
+                <h2>Stray Kids</h2>
+
+                <p>
+                    Experience powerful stages and unforgettable Stray Kids moments.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 5 -->
+        <div class="media-card">
+
+            <span class="badge">NEWJEANS</span>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYnuLfV2_sO10bTgBe7R1ULj9vpD2TwiDlv-b28apXN0F5i-4tVAI09-s&s=10" alt="NewJeans">
+
+            <div class="media-info">
+                <h2>NewJeans</h2>
+
+                <p>
+                    Explore stylish performances and memorable NewJeans moments.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 6 -->
+        <div class="media-card">
+
+            <span class="badge">SEVENTEEN</span>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiaF-QFVXYghUhyF9ec_7Hmw1KaUVAeEjlphcWV595i88d_0K4s4ayTVWl&s=10" alt="SEVENTEEN">
+
+            <div class="media-info">
+                <h2>SEVENTEEN</h2>
+
+                <p>
+                    Discover amazing performances and special SEVENTEEN memories.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 7 -->
+        <div class="media-card">
+
+            <span class="badge">EXO</span>
+
+            <img src="https://i.pinimg.com/736x/e2/15/a4/e215a47a809947485de19e9f77667b7c.jpg" alt="EXO">
+
+            <div class="media-info">
+                <h2>EXO</h2>
+
+                <p>
+                    Explore iconic stages, performances and moments from EXO.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 8 -->
+        <div class="media-card">
+
+            <span class="badge">IVE</span>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkAClcBB6v_HdjfjiHMGsw9M-XoeRn_VT1eJi2yJpRyhOek2McJDWXxDU&s=10" alt="IVE">
+
+            <div class="media-info">
+                <h2>IVE</h2>
+
+                <p>
+                    Discover stylish performances and unforgettable IVE moments.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

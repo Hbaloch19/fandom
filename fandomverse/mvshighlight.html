@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>K-Pop Event Highlights | FandomVerse</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background:
+                radial-gradient(circle at 85% 0%, rgba(106,45,255,0.25), transparent 40%),
+                radial-gradient(circle at 0% 100%, rgba(255,46,196,0.18), transparent 40%),
+                #06050f;
+
+            color: #f5f3ff;
+            font-family: Arial, sans-serif;
+            padding: 50px 7%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 45px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .intro {
+            text-align: center;
+            color: #a79fd1;
+            margin-bottom: 45px;
+            font-size: 17px;
+        }
+
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .highlight-card {
+            position: relative;
+            background: #141026;
+            border: 1px solid rgba(139,61,255,0.28);
+            border-radius: 14px;
+            overflow: hidden;
+            transition: 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-8px);
+            border-color: #ef44c8;
+
+            box-shadow:
+                0 15px 40px rgba(123,47,247,0.25),
+                0 0 25px rgba(255,46,196,0.15);
+        }
+
+        .highlight-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+            transition: 0.4s ease;
+        }
+
+        .highlight-card:hover img {
+            transform: scale(1.06);
+        }
+
+        .badge {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+
+            background: linear-gradient(
+                135deg,
+                #7b2ff7,
+                #ff2ec4
+            );
+
+            color: white;
+            padding: 7px 13px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            z-index: 2;
+        }
+
+        .highlight-info {
+            padding: 18px;
+        }
+
+        .highlight-info h2 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .highlight-info p {
+            color: #9d94c2;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .event-btn {
+            display: inline-block;
+            margin-top: 14px;
+            padding: 9px 15px;
+
+            color: white;
+            text-decoration: none;
+
+            border: 1px solid #7b2ff7;
+            border-radius: 7px;
+
+            font-size: 13px;
+            transition: 0.3s;
+        }
+
+        .event-btn:hover {
+            background: linear-gradient(
+                135deg,
+                #7b2ff7,
+                #ff2ec4
+            );
+
+            border-color: transparent;
+        }
+
+        @media (max-width: 1100px) {
+            .highlights {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            body {
+                padding: 35px 5%;
+            }
+
+            .highlights {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+
+            .highlight-card img {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>K-POP EVENT HIGHLIGHTS</h1>
+
+    <p class="intro">
+        Relive unforgettable concerts, performances and special K-Pop events
+    </p>
+
+    <div class="highlights">
+
+        <!-- CARD 1 -->
+        <div class="highlight-card">
+
+            <span class="badge">BTS</span>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf72Qd1-dNRNAWsyiHOEne7BXpG1FiFcnUlxuAKx8MaYHH3dp2iVcmmx4&s=10" alt="BTS Event">
+
+            <div class="highlight-info">
+                <h2>BTS World Tour</h2>
+
+                <p>
+                    Relive exciting performances, concerts and unforgettable BTS tour moments.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 2 -->
+        <div class="highlight-card">
+
+            <span class="badge">BLACKPINK</span>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTminhQAtdVBo5Cr48akM96Nji1yQemLW9mYWovGpmI6cUtKXh6yXeBqzbu&s=10" alt="BLACKPINK Event">
+
+            <div class="highlight-info">
+                <h2>BLACKPINK Concert</h2>
+
+                <p>
+                    Experience powerful stages, live performances and iconic BLACKPINK moments.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 3 -->
+        <div class="highlight-card">
+
+            <span class="badge">STRAY KIDS</span>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLjaflzzQR1w-j4wMHrlBNLNim_EoTjaX1Mh3rS99HARaUCGKmJ2qf1gCB&s=10" alt="Stray Kids Event">
+
+            <div class="highlight-info">
+                <h2>Stray Kids Live</h2>
+
+                <p>
+                    Discover energetic performances and unforgettable Stray Kids concert moments.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 4 -->
+        <div class="highlight-card">
+
+            <span class="badge">TWICE</span>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdt22o4DpY3PwXgbDmbBJT5aIaKRe3qozkPlYa4qmVwokAzEbBYOIdTLZf&s=10" alt="TWICE Event">
+
+            <div class="highlight-info">
+                <h2>TWICE World Tour</h2>
+
+                <p>
+                    Explore amazing stages, fan moments and memorable TWICE performances.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 5 -->
+        <div class="highlight-card">
+
+            <span class="badge">ATEEZ</span>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkFN8FKnCfXnmRXF6i2M22rWVQzZLPPKhWrbrQdTM5uMPlzAK4tykpq0o&s=10" alt="ATEEZ Event">
+
+            <div class="highlight-info">
+                <h2>ATEEZ Concert</h2>
+
+                <p>
+                    Relive powerful performances and exciting moments from ATEEZ events.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 6 -->
+        <div class="highlight-card">
+
+            <span class="badge">SEVENTEEN</span>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVQioVh8mpr-i03HFaiwhnMkHjhR0VLMr3Hwjy4c4h8-0MVNIv-Y3wK18&s=10" alt="SEVENTEEN Event">
+
+            <div class="highlight-info">
+                <h2>SEVENTEEN Live</h2>
+
+                <p>
+                    Explore spectacular stages, concerts and memorable SEVENTEEN moments.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 7 -->
+        <div class="highlight-card">
+
+            <span class="badge">ENHYPEN</span>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmzx3K9Sfq60UPjfNxPZNdxDygOm4o9LDgtEdcF3RYz6qdBup6Oii4CYs&s=10" alt="ENHYPEN Event">
+
+            <div class="highlight-info">
+                <h2>ENHYPEN World Tour</h2>
+
+                <p>
+                    Discover stunning performances and unforgettable ENHYPEN tour highlights.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 8 -->
+        <div class="highlight-card">
+
+            <span class="badge">TXT</span>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi-hY7HFjUj_0n_1tkWQlq5lg5vRjejckbMR47IlEJ4N1_vY0TmhdWC4&s=10" alt="TXT Event">
+
+            <div class="highlight-info">
+                <h2>TXT Concert</h2>
+
+                <p>
+                    Experience exciting stages and special moments from TXT performances.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

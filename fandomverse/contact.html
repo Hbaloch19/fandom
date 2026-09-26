@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | FandomVerse</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="index.html">FANDOM<span>VERSE</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="anime.html">Anime</a>
+      <a href="gaming.html">Gaming</a>
+      <a href="movies.html">Movies</a>
+      <a href="tvshows.html">TV Shows</a>
+      <a href="kpop.html">K-Pop</a>
+      <a href="comics.html">Comics</a>
+      <a href="manga.html">Manga</a>
+      <a href="outfits.html">Outfits</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <form class="nav-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="Search FandomVerse..." aria-label="Search FandomVerse">
+        <button type="submit" aria-label="Search">🔍</button>
+      </form>
+      <a href="bookmarks.html" class="nav-icon-btn" title="My Bookmarks">🔖</a>
+      <button type="button" class="nav-icon-btn" onclick="showMessage('This is a UI preview only. Login is not implemented in this demo.')" title="Login">👤</button>
+    </div>
+  </nav>
+</header>
+
+<section class="page-header">
+  <p class="tag">LET'S CONNECT</p>
+  <h1>CONTACT</h1>
+  <p>Have an idea? We'd love to hear from you.</p>
+</section>
+
+<section class="section">
+
+  <form class="contact-form" onsubmit="sendMessage(event)">
+
+    <input type="text" placeholder="Your Name" required>
+
+    <input type="email" placeholder="Your Email" required>
+
+    <select required>
+      <option value="">Choose a topic</option>
+      <option>Anime</option>
+      <option>Gaming</option>
+      <option>Movies</option>
+      <option>TV Shows</option>
+      <option>K-Pop</option>
+      <option>Comics</option>
+      <option>Manga</option>
+      <option>Outfits</option>
+      <option>Other</option>
+    </select>
+
+    <textarea rows="7" placeholder="Your Message" required></textarea>
+
+    <button class="btn" type="submit">SEND MESSAGE</button>
+  </form>
+
+  <div class="mission" style="margin-top:60px;">
+    <h2 style="font-family:'Orbitron'; font-size:16px; letter-spacing:2px; color:white; margin-bottom:20px;">FIND US</h2>
+    <div style="aspect-ratio: 16/6; border: 1px solid var(--border); overflow:hidden;">
+      <iframe
+        src="https://www.google.com/maps?q=New+York,NY&output=embed"
+        width="100%" height="100%" style="border:0; filter: invert(90%) hue-rotate(180deg);"
+        allowfullscreen loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="FandomVerse office location">
+      </iframe>
+    </div>
+    <p style="color: var(--muted); margin-top:15px; font-size:13px;">
+      📍 FandomVerse HQ, 24 Multiverse Avenue, New York, NY · Open Mon–Fri, 10am–6pm
+    </p>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 FandomVerse</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

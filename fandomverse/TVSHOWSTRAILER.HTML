@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TV Show Trailers | FandomVerse</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:
+        radial-gradient(circle at 85% 0%, rgba(106,45,255,0.25), transparent 40%),
+        radial-gradient(circle at 0% 100%, rgba(255,46,196,0.18), transparent 40%),
+        #06050f;
+    color:white;
+    min-height:100vh;
+}
+
+/* HEADER */
+.page-header{
+    text-align:center;
+    padding:70px 20px 45px;
+}
+
+.page-header h1{
+    font-size:48px;
+    font-weight:900;
+    letter-spacing:2px;
+    text-shadow:0 0 20px rgba(255,46,196,.5);
+}
+
+.page-header h1 span{
+    color:#ff2ec4;
+}
+
+.page-header p{
+    margin-top:15px;
+    color:#bdb7d5;
+    font-size:16px;
+}
+
+/* TRAILER GRID */
+.trailer-grid{
+    width:92%;
+    max-width:1450px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    padding-bottom:70px;
+}
+
+/* CARD */
+.trailer-card{
+    background:rgba(17,13,34,.92);
+    border:1px solid rgba(145,72,255,.45);
+    border-radius:16px;
+    overflow:hidden;
+    transition:.4s ease;
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+}
+
+.trailer-card:hover{
+    transform:translateY(-10px);
+    border-color:#ff2ec4;
+    box-shadow:
+        0 0 15px rgba(255,46,196,.4),
+        0 0 35px rgba(106,45,255,.25);
+}
+
+/* VIDEO */
+.video-box{
+    position:relative;
+    width:100%;
+    height:220px;
+    background:#000;
+    overflow:hidden;
+}
+
+.video-box iframe{
+    width:100%;
+    height:100%;
+    border:0;
+}
+
+/* PLAY BUTTON */
+.play-btn{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:rgba(255,46,196,.92);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:26px;
+    color:white;
+    box-shadow:0 0 25px rgba(255,46,196,.7);
+    pointer-events:none;
+}
+
+/* TAG */
+.trailer-tag{
+    display:inline-block;
+    margin:18px 18px 5px;
+    padding:6px 12px;
+    background:#ff2ec4;
+    color:white;
+    border-radius:20px;
+    font-size:11px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+/* INFO */
+.trailer-info{
+    padding:0 18px 22px;
+}
+
+.trailer-info h2{
+    font-size:21px;
+    margin:8px 0;
+}
+
+.trailer-type{
+    color:#a875ff;
+    font-size:13px;
+    margin-bottom:10px;
+}
+
+.trailer-info p{
+    color:#aaa4bd;
+    font-size:13px;
+    line-height:1.6;
+}
+
+/* BUTTON */
+.watch-btn{
+    display:inline-block;
+    margin-top:15px;
+    color:#fff;
+    text-decoration:none;
+    font-size:13px;
+    font-weight:bold;
+    letter-spacing:.5px;
+    transition:.3s;
+}
+
+.watch-btn:hover{
+    color:#ff2ec4;
+    text-shadow:0 0 10px #ff2ec4;
+}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+    .trailer-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+@media(max-width:800px){
+    .trailer-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .page-header h1{
+        font-size:38px;
+    }
+}
+
+@media(max-width:550px){
+    .trailer-grid{
+        grid-template-columns:1fr;
+        width:90%;
+    }
+
+    .page-header h1{
+        font-size:32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="page-header">
+    <h1><span>TV SHOW</span> TRAILERS</h1>
+    <p>Watch the latest trailers, teasers and exciting moments from your favorite TV shows.</p>
+</header>
+
+
+<!-- TRAILERS -->
+<section class="trailer-grid">
+
+    <!-- 1 -->
+    <div class="trailer-card">
+
+        <div class="video-box">
+            <iframe
+                src="https://www.youtube.com/embed/b9EkMc79ZSU"
+                title="Stranger Things Trailer"
+                allowfullscreen>
+            </iframe>
+
+            <div class="play-btn">▶</div>
+        </div>
+
+        <span class="trailer-tag">TV SHOW</span>
+
+        <div class="trailer-info">
+            <h2>Stranger Things</h2>
+            <div class="trailer-type">Sci-Fi • Horror</div>
+
+            <p>
+                Enter the mysterious world of Hawkins and discover the
+                supernatural adventures of the Stranger Things crew.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- 2 -->
+    <div class="trailer-card">
+
+        <div class="video-box">
+            <iframe
+                src="https://www.youtube.com/embed/Di310WS8zLk"
+                title="Wednesday Trailer"
+                allowfullscreen>
+            </iframe>
+
+            <div class="play-btn">▶</div>
+        </div>
+
+        <span class="trailer-tag">TV SHOW</span>
+
+        <div class="trailer-info">
+            <h2>Wednesday</h2>
+            <div class="trailer-type">Mystery • Comedy</div>
+
+            <p>
+                Follow Wednesday Addams as she investigates strange
+                mysteries at Nevermore Academy.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- 3 -->
+    <div class="trailer-card">
+
+        <div class="video-box">
+            <iframe
+                src="https://www.youtube.com/embed/KPLWWIOCOOQ"
+                title="Game of Thrones Trailer"
+                allowfullscreen>
+            </iframe>
+
+            <div class="play-btn">▶</div>
+        </div>
+
+        <span class="trailer-tag">TV SHOW</span>
+
+        <div class="trailer-info">
+            <h2>Game of Thrones</h2>
+            <div class="trailer-type">Fantasy • Drama</div>
+
+            <p>
+                Experience epic battles, powerful kingdoms and the
+                legendary fight for the Iron Throne.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- 4 -->
+    <div class="trailer-card">
+
+        <div class="video-box">
+            <iframe
+                src="https://www.youtube.com/embed/oVzVdvGIC7U"
+                title="Peaky Blinders Trailer"
+                allowfullscreen>
+            </iframe>
+
+            <div class="play-btn">▶</div>
+        </div>
+
+        <span class="trailer-tag">TV SHOW</span>
+
+        <div class="trailer-info">
+            <h2>Peaky Blinders</h2>
+            <div class="trailer-type">Crime • Drama</div>
+
+            <p>
+                Enter the dangerous world of the Shelby family and
+                their rise through the criminal underworld.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- 5 -->
+    <div class="trailer-card">
+
+        <div class="video-box">
+            <iframe
+                src="https://www.youtube.com/embed/_InqQJRqGW4"
+                title="Money Heist Trailer"
+                allowfullscreen>
+            </iframe>
+
+            <div class="play-btn">▶</div>
+        </div>
+
+        <span class="trailer-tag">TV SHOW</span>
+
+        <div class="trailer-info">
+            <h2>Money Heist</h2>
+            <div class="trailer-type">Crime • Thriller</div>
+
+            <p>
+                Join the Professor and his team as they plan one of the
+                most ambitious heists ever attempted.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- 6 -->
+    <div class="trailer-card">
+
+        <div class="video-box">
+            <iframe
+                src="https://www.youtube.com/embed/tcrNsIaQkb4"
+                title="The Boys Trailer"
+                allowfullscreen>
+            </iframe>
+
+            <div class="play-btn">▶</div>
+        </div>
+
+        <span class="trailer-tag">TV SHOW</span>
+
+        <div class="trailer-info">
+            <h2>The Boys</h2>
+            <div class="trailer-type">Action • Superhero</div>
+
+            <p>
+                Watch an unconventional group take on corrupt superheroes
+                in a brutal and unpredictable world.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- 7 -->
+    <div class="trailer-card">
+
+        <div class="video-box">
+            <iframe
+                src="https://www.youtube.com/embed/HhesaQXLuRY"
+                title="Breaking Bad Trailer"
+                allowfullscreen>
+            </iframe>
+
+            <div class="play-btn">▶</div>
+        </div>
+
+        <span class="trailer-tag">TV SHOW</span>
+
+        <div class="trailer-info">
+            <h2>Breaking Bad</h2>
+            <div class="trailer-type">Crime • Drama</div>
+
+            <p>
+                Follow Walter White's transformation as his life takes
+                a dangerous turn into the criminal world.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- 8 -->
+    <div class="trailer-card">
+
+        <div class="video-box">
+            <iframe
+                src="https://www.youtube.com/embed/sfAc2U20uyg"
+                title="The Walking Dead Trailer"
+                allowfullscreen>
+            </iframe>
+
+            <div class="play-btn">▶</div>
+        </div>
+
+        <span class="trailer-tag">TV SHOW</span>
+
+        <div class="trailer-info">
+            <h2>The Walking Dead</h2>
+            <div class="trailer-type">Horror • Drama</div>
+
+            <p>
+                Survive a dangerous post-apocalyptic world filled with
+                walkers, danger and unforgettable characters.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
+```

@@ -1,0 +1,538 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TV Shows Character Posters | FandomVerse</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background:
+                radial-gradient(circle at 85% 0%, rgba(106,45,255,0.25), transparent 40%),
+                radial-gradient(circle at 0% 100%, rgba(255,46,196,0.18), transparent 40%),
+                #06050f;
+
+            color: #f5f3ff;
+            font-family: Arial, sans-serif;
+            padding: 50px 7%;
+        }
+
+        /* HEADER */
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .page-header h1 {
+            font-size: 48px;
+            letter-spacing: 3px;
+            margin-bottom: 12px;
+        }
+
+        .page-header h1 span {
+            color: #ff2ec4;
+        }
+
+        .page-header p {
+            color: #aaa1c9;
+            font-size: 17px;
+        }
+
+        /* POSTER GRID */
+
+        .poster-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        /* CARD */
+
+        .poster-card {
+            position: relative;
+            background: #121022;
+            border: 1px solid rgba(139,61,255,0.3);
+            border-radius: 14px;
+            overflow: hidden;
+
+            box-shadow:
+                0 10px 30px rgba(0,0,0,0.35);
+
+            transition: 0.35s ease;
+        }
+
+        .poster-card:hover {
+            transform: translateY(-10px) scale(1.02);
+
+            border-color: #ff2ec4;
+
+            box-shadow:
+                0 15px 40px rgba(123,47,247,0.3),
+                0 0 25px rgba(255,46,196,0.18);
+        }
+
+        /* POSTER IMAGE */
+
+        .poster-image {
+            position: relative;
+            width: 100%;
+            height: 390px;
+            overflow: hidden;
+        }
+
+        .poster-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+
+            transition: 0.5s ease;
+        }
+
+        .poster-card:hover .poster-image img {
+            transform: scale(1.08);
+        }
+
+        /* DARK OVERLAY */
+
+        .poster-image::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    to top,
+                    rgba(6,5,15,0.95),
+                    rgba(6,5,15,0.05) 65%
+                );
+        }
+
+        /* CHARACTER TAG */
+
+        .character-tag {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+
+            z-index: 2;
+
+            padding: 7px 12px;
+
+            background: rgba(255,46,196,0.9);
+            color: white;
+
+            font-size: 11px;
+            font-weight: bold;
+
+            border-radius: 20px;
+
+            letter-spacing: 1px;
+        }
+
+        /* CARD INFO */
+
+        .poster-info {
+            padding: 20px;
+        }
+
+        .poster-info h2 {
+            font-size: 22px;
+            margin-bottom: 7px;
+        }
+
+        .show-name {
+            color: #ff2ec4;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .poster-info p {
+            color: #9e96bb;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .explore {
+            display: inline-block;
+            margin-top: 15px;
+
+            color: #8f65ff;
+            font-size: 13px;
+            font-weight: bold;
+
+            text-decoration: none;
+
+            transition: 0.3s;
+        }
+
+        .explore:hover {
+            color: #ff2ec4;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 1100px) {
+
+            .poster-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+        }
+
+        @media (max-width: 800px) {
+
+            .poster-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media (max-width: 550px) {
+
+            body {
+                padding: 35px 5%;
+            }
+
+            .poster-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .page-header h1 {
+                font-size: 35px;
+            }
+
+            .poster-image {
+                height: 430px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- PAGE HEADER -->
+
+    <div class="page-header">
+
+        <h1>
+            TV SHOWS <span>CHARACTERS</span>
+        </h1>
+
+        <p>
+            Explore iconic characters from the world's most popular TV shows.
+        </p>
+
+    </div>
+
+
+    <!-- CHARACTER POSTERS -->
+
+    <div class="poster-grid">
+
+
+        <!-- 1 -->
+
+        <div class="poster-card">
+
+            <div class="poster-image">
+
+                <span class="character-tag">
+                    CHARACTER
+                </span>
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbc3NKTP1RbDHtT9fOJ0qLwVzJ-N7yp3BjZMCdNq-O-Q&s=10"
+                    alt="Eleven">
+
+            </div>
+
+            <div class="poster-info">
+
+                <h2>Eleven</h2>
+
+                <div class="show-name">
+                    Stranger Things
+                </div>
+
+                <p>
+                    A powerful character with mysterious abilities
+                    who plays a central role in the supernatural story.
+                </p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 2 -->
+
+        <div class="poster-card">
+
+            <div class="poster-image">
+
+                <span class="character-tag">
+                    CHARACTER
+                </span>
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbmsM0davqNL-aa0tHtg9Iot_-f9cT1fxeU4Huko_r_w&s=10"
+                    alt="Wednesday Addams">
+
+            </div>
+
+            <div class="poster-info">
+
+                <h2>Wednesday Addams</h2>
+
+                <div class="show-name">
+                    Wednesday
+                </div>
+
+                <p>
+                    A darkly witty and mysterious student whose
+                    investigations uncover secrets around her school.
+                </p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 3 -->
+
+        <div class="poster-card">
+
+            <div class="poster-image">
+
+                <span class="character-tag">
+                    CHARACTER
+                </span>
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlouuR0bBjcw-3vpQxp2DYvUPKHMY0rJRD-N272TIP-w&s=10"
+                    alt="Jon Snow">
+
+            </div>
+
+            <div class="poster-info">
+
+                <h2>Jon Snow</h2>
+
+                <div class="show-name">
+                    Game of Thrones
+                </div>
+
+                <p>
+                    A respected warrior caught between loyalty,
+                    family, honor and the struggle for the throne.
+                </p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 4 -->
+
+        <div class="poster-card">
+
+            <div class="poster-image">
+
+                <span class="character-tag">
+                    CHARACTER
+                </span>
+
+                <img
+                    src="https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/1469916253_game_of_thrones_daenerys_targaryen_emilia_clarke_copy.jpg"
+                    alt="Daenerys Targaryen">
+
+            </div>
+
+            <div class="poster-info">
+
+                <h2>Daenerys Targaryen</h2>
+
+                <div class="show-name">
+                    Game of Thrones
+                </div>
+
+                <p>
+                    A determined leader whose journey takes her
+                    from exile toward the center of Westeros.
+                </p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 5 -->
+
+        <div class="poster-card">
+
+            <div class="poster-image">
+
+                <span class="character-tag">
+                    CHARACTER
+                </span>
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXjEL7GMP0UM_v6GrCvN2stS3mnFpkZh3kRO6UBhcxUg&s=10"
+                    alt="Sherlock Holmes">
+
+            </div>
+
+            <div class="poster-info">
+
+                <h2>Sherlock Holmes</h2>
+
+                <div class="show-name">
+                    Sherlock
+                </div>
+
+                <p>
+                    A brilliant detective known for solving complex
+                    mysteries through observation and deduction.
+                </p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 6 -->
+
+        <div class="poster-card">
+
+            <div class="poster-image">
+
+                <span class="character-tag">
+                    CHARACTER
+                </span>
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5qM02nycO8JWc5FZXm__dPpTUC8nDMMsYKxfiEsUshQ&s=10"
+                    alt="Thomas Shelby">
+
+            </div>
+
+            <div class="poster-info">
+
+                <h2>Thomas Shelby</h2>
+
+                <div class="show-name">
+                    Peaky Blinders
+                </div>
+
+                <p>
+                    A strategic and ambitious leader navigating
+                    family, business and dangerous rivalries.
+                </p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 7 -->
+
+        <div class="poster-card">
+
+            <div class="poster-image">
+
+                <span class="character-tag">
+                    CHARACTER
+                </span>
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC1Rx5FlML3IjAsHk2ACx1wey8nmQk9esxg9jtDa5kTg&s=10"
+                    alt="The Professor">
+
+            </div>
+
+            <div class="poster-info">
+
+                <h2>The Professor</h2>
+
+                <div class="show-name">
+                    Money Heist
+                </div>
+
+                <p>
+                    A mastermind who carefully plans complex
+                    operations while staying several steps ahead.
+                </p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 8 -->
+
+        <div class="poster-card">
+
+            <div class="poster-image">
+
+                <span class="character-tag">
+                    CHARACTER
+                </span>
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS3xBg1fbdnMq6AjpsJv4bjlDSk6WFPuXs-Qk0rrL6Lg&s=10"
+                    alt="Walter White">
+
+            </div>
+
+            <div class="poster-info">
+
+                <h2>Walter White</h2>
+
+                <div class="show-name">
+                    Breaking Bad
+                </div>
+
+                <p>
+                    A chemistry teacher whose life changes dramatically
+                    after entering the world of illegal business.
+                </p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+```

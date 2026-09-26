@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fantasy Comics | FandomVerse</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background:
+            radial-gradient(circle at 85% 0%, rgba(106,45,255,0.25), transparent 40%),
+            radial-gradient(circle at 0% 100%, rgba(255,46,196,0.18), transparent 40%),
+            #06050f;
+        color: #f5f3ff;
+        font-family: Arial, sans-serif;
+        padding: 50px 7%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+
+    .intro {
+        text-align: center;
+        color: #a79fd1;
+        margin-bottom: 45px;
+    }
+
+    .comics {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+
+    .comic {
+        background: #141026;
+        border: 1px solid rgba(139,61,255,0.28);
+        border-radius: 12px;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .comic:hover {
+        transform: translateY(-8px);
+        border-color: #a855f7;
+    }
+
+    .comic img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .comic h2 {
+        font-size: 20px;
+        padding: 18px 18px 5px;
+    }
+
+    .comic p {
+        color: #9d94c2;
+        padding: 0 18px 20px;
+    }
+
+    @media (max-width: 900px) {
+        .comics {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 600px) {
+        .comics {
+            grid-template-columns: 1fr;
+        }
+
+        h1 {
+            font-size: 35px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="index.html">FANDOM<span>VERSE</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="anime.html">Anime</a>
+      <a href="gaming.html">Gaming</a>
+      <a href="movies.html">Movies</a>
+      <a href="tvshows.html">TV Shows</a>
+      <a href="kpop.html">K-Pop</a>
+      <a href="comics.html">Comics</a>
+      <a href="manga.html">Manga</a>
+      <a href="outfits.html">Outfits</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <form class="nav-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="Search FandomVerse..." aria-label="Search FandomVerse">
+        <button type="submit" aria-label="Search">🔍</button>
+      </form>
+      <a href="bookmarks.html" class="nav-icon-btn" title="My Bookmarks">🔖</a>
+      <button type="button" class="nav-icon-btn" onclick="showMessage('This is a UI preview only. Login is not implemented in this demo.')" title="Login">👤</button>
+    </div>
+  </nav>
+</header>
+
+<h1>FANTASY COMICS</h1>
+
+<p class="intro">
+    Enter magical worlds filled with heroes, monsters and legendary adventures
+</p>
+
+<div class="comics">
+
+    <!-- COMIC 1 -->
+    <div class="comic">
+        <img src="https://i.pinimg.com/736x/4a/ea/00/4aea00743a513dfc2852e6ff352d789d.jpg" alt="The Sandman">
+        <h2>The Sandman</h2>
+        <p>A mysterious fantasy world ruled by dreams, gods and immortal beings.</p>
+    </div>
+
+    <!-- COMIC 2 -->
+    <div class="comic">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQepp9_h0i8AbBH4Vyq1_h4nyxflZPjaxp6H4Vtyh3TWLdkZr3JY0Vx5Ms&s=10" alt="ElfQuest">
+        <h2>ElfQuest</h2>
+        <p>Elves embark on an epic journey through a magical and dangerous world.</p>
+    </div>
+
+    <!-- COMIC 3 -->
+    <div class="comic">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8pdNYH0HSmJoRFu9yDcz2PuXqiMGmVxHgimY2zwHHSWX1aV5o8QpOMBNI&s=10" alt="Fables">
+        <h2>Fables</h2>
+        <p>Fairytale characters live secretly in the modern world.</p>
+    </div>
+
+    <!-- COMIC 4 -->
+    <div class="comic">
+        <img src="https://i0.wp.com/www.kukuruyo.com/wp-content/uploads/2018/09/MG-254-1.jpg?fit=794%2C1123&ssl=1" alt="Monstress">
+        <h2>Monstress</h2>
+        <p>A dark fantasy adventure filled with magic, monsters and ancient powers.</p>
+    </div>
+
+    <!-- COMIC 5 -->
+    <div class="comic">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2_TzopvI_xTPpl6Tckt-v9hxKuxBeLoCSr-LH5uglBFIEvk3C5hC6G1Y&s=10" alt="Coda">
+        <h2>Coda</h2>
+        <p>A post-apocalyptic fantasy adventure filled with magic and strange creatures.</p>
+    </div>
+
+    <!-- COMIC 6 -->
+    <div class="comic">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-aFdmHPt88xRcMetA9-ClrbR1Rjwr8g1is-YQwFPc3S7ecAsMNB6rShMv&s=10" alt="Once & Future">
+        <h2>Once & Future</h2>
+        <p>Ancient legends and mythical heroes return to the modern world.</p>
+    </div>
+
+    <!-- COMIC 7 -->
+    <div class="comic">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7_MBstQVK2z0P5nw1iCOUgnEZYPgFP9hAeKohTvvuYg&s" alt="Head Lopper">
+        <h2>Head Lopper</h2>
+        <p>A fearless warrior battles monsters and supernatural enemies.</p>
+    </div>
+
+    <!-- COMIC 8 -->
+    <div class="comic">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiczhIw3q2vJYImfNqUwwevGnbTOX1qMaLbN2u97KaxaMhZca7jWq9-PFP&s=10" alt="Lightfall">
+        <h2>Lightfall</h2>
+        <p>A young hero begins a magical journey through a mysterious world.</p>
+    </div>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 FandomVerse</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

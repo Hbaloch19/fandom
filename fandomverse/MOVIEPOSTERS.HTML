@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Posters | FandomVerse</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background:
+                radial-gradient(circle at 85% 0%, rgba(106,45,255,0.25), transparent 40%),
+                radial-gradient(circle at 0% 100%, rgba(255,46,196,0.18), transparent 40%),
+                #06050f;
+            color: #f5f3ff;
+            font-family: Arial, sans-serif;
+            padding: 50px 7%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 45px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .intro {
+            text-align: center;
+            color: #a79fd1;
+            margin-bottom: 45px;
+            font-size: 17px;
+        }
+
+        .posters {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .poster-card {
+            position: relative;
+            background: #141026;
+            border: 1px solid rgba(139,61,255,0.28);
+            border-radius: 14px;
+            overflow: hidden;
+            transition: 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        }
+
+        .poster-card:hover {
+            transform: translateY(-8px);
+            border-color: #ef44c8;
+            box-shadow:
+                0 15px 40px rgba(123,47,247,0.25),
+                0 0 25px rgba(255,46,196,0.15);
+        }
+
+        .poster-card img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            display: block;
+            transition: 0.4s ease;
+        }
+
+        .poster-card:hover img {
+            transform: scale(1.06);
+        }
+
+        .badge {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            background: linear-gradient(135deg, #7b2ff7, #ff2ec4);
+            color: white;
+            padding: 7px 13px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            z-index: 2;
+        }
+
+        .poster-info {
+            padding: 18px;
+        }
+
+        .poster-info h2 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .poster-info p {
+            color: #9d94c2;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .poster-btn {
+            display: inline-block;
+            margin-top: 14px;
+            padding: 9px 15px;
+            color: white;
+            text-decoration: none;
+            border: 1px solid #7b2ff7;
+            border-radius: 7px;
+            font-size: 13px;
+            transition: 0.3s;
+        }
+
+        .poster-btn:hover {
+            background: linear-gradient(135deg, #7b2ff7, #ff2ec4);
+            border-color: transparent;
+        }
+
+        @media (max-width: 1100px) {
+            .posters {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 35px 5%;
+            }
+
+            .posters {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+
+            .poster-card img {
+                height: 420px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>MOVIE POSTERS</h1>
+
+    <p class="intro">
+        Explore iconic movie posters from legendary cinematic universes
+    </p>
+
+    <div class="posters">
+
+        <!-- 1 -->
+        <div class="poster-card">
+            <span class="badge">MARVEL</span>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJmDcAtF-Yjn5NUtyiUGAq3CU1RFKM7cxJhuM0rSuQUbYCbLOI5MNEKuE&s=10" alt="SPIDER MAN">
+
+            <div class="poster-info">
+                <h2>SPIDERMAN</h2>
+                <p>
+                    A legendary Marvel poster featuring Earth's greatest heroes.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="poster-card">
+            <span class="badge">DC</span>
+
+            <img src="https://i.pinimg.com/originals/61/4e/f2/614ef2b62f2ba21bc75cf0fa7f0c56c5.jpg?nii=t" alt="SUPER MAN">
+
+            <div class="poster-info">
+                <h2>SUPER MAN</h2>
+                <p>
+                    A dark and cinematic poster capturing Gotham's mysterious hero.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="poster-card">
+            <span class="badge">MARVEL</span>
+
+            <img src="https://www.plakatbar.no/cdn/shop/files/Designutennavn_17_86b7a5f3-6df4-4ded-a7df-6f6898dce074.jpg?v=1710502200" alt="JOKER">
+
+            <div class="poster-info">
+                <h2>JOKER</h2>
+                <p>
+                    An iconic superhero poster celebrating the web-slinging hero.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="poster-card">
+            <span class="badge">DC</span>
+
+            <img src="https://cdng.europosters.eu/pod_public/1300/263125.jpg" alt="IRON MAN">
+
+            <div class="poster-info">
+                <h2>IRON MAN</h2>
+                <p>
+                    A powerful poster showcasing the legendary Man of Steel.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="poster-card">
+            <span class="badge">MARVEL</span>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjhbnzvRGE6RTs6QcZArRxfUfoMmuNkZGfHLGAaSt38YYOW1JRICGgsBUO&s=10" alt="MOON KNIGHT">
+
+            <div class="poster-info">
+                <h2>MOON KNIGHT</h2>
+                <p>
+                    A futuristic poster featuring one of Marvel's most iconic heroes.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="poster-card">
+            <span class="badge">MARVEL</span>
+
+            <img src="https://cdn.displate.com/artwork/2026-07-22/235c121147f03724cfa7ffe4ec2eab9c_4c550d5cb309fdc1217133ed10ced107.jpg?speedsize=w_681" alt="WOLVERINE">
+
+            <div class="poster-info">
+                <h2>WOLVERINE</h2>
+                <p>
+                    A powerful cinematic poster inspired by the God of Thunder.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="poster-card">
+            <span class="badge">DC</span>
+
+            <img src="https://m.media-amazon.com/images/I/91dszaGMHPL._AC_UF894,1000_QL80_.jpg" alt="DEAD POOL">
+
+            <div class="poster-info">
+                <h2>DEAD POOL</h2>
+                <p>
+                    An epic poster celebrating one of DC's most iconic heroes.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="poster-card">
+            <span class="badge">SCI-FI</span>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdR-uvc3k9pJsQgYL3qoNcj9d9kasr00o2e1h_3G2hcjWttHML04y5sjk&s=10" alt="DOCTOR STRANGE">
+
+            <div class="poster-info">
+                <h2>DOCTOR STRANGE</h2>
+                <p>
+                    A visually stunning poster from the world of Pandora.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

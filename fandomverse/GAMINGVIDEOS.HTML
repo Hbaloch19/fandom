@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gaming Videos | FandomVerse</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background:
+                radial-gradient(circle at 85% 0%, rgba(106,45,255,0.25), transparent 40%),
+                radial-gradient(circle at 0% 100%, rgba(255,46,196,0.18), transparent 40%),
+                #06050f;
+
+            color: #f5f3ff;
+            font-family: Arial, sans-serif;
+            padding: 50px 7%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 45px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .intro {
+            text-align: center;
+            color: #a79fd1;
+            margin-bottom: 45px;
+            font-size: 17px;
+        }
+
+        /* 8 VIDEO GRID */
+        .videos {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .video-card {
+            background: #141026;
+            border: 1px solid rgba(139,61,255,0.28);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        }
+
+        .video-card:hover {
+            transform: translateY(-8px);
+            border-color: #ef44c8;
+
+            box-shadow:
+                0 15px 40px rgba(123,47,247,0.25),
+                0 0 20px rgba(255,46,196,0.12);
+        }
+
+        .video-card iframe {
+            width: 100%;
+            height: 210px;
+            border: none;
+            display: block;
+        }
+
+        .video-info {
+            padding: 18px;
+        }
+
+        .video-info h2 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .video-info p {
+            color: #9d94c2;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        /* TABLET */
+        @media (max-width: 1100px) {
+            .videos {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+            .videos {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+
+            body {
+                padding: 35px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>GAMING VIDEOS</h1>
+
+    <p class="intro">
+        Watch legendary gaming trailers, gameplay and epic moments
+    </p>
+
+    <div class="videos">
+
+        <!-- VIDEO 1 -->
+        <div class="video-card">
+            <iframe
+                src="https://www.youtube.com/embed/PicL9iv8aaU"
+                title="Gaming Trailer"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+            <div class="video-info">
+                <h2>Gaming Trailer</h2>
+                <p>Watch an exciting gaming trailer and cinematic highlights.</p>
+            </div>
+        </div>
+
+
+        <!-- VIDEO 2 -->
+        <div class="video-card">
+            <iframe
+                src="https://www.youtube.com/embed/7DDeTX03Sj4?si=/VIDEO_ID_2"
+                title="Epic Gameplay"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+            <div class="video-info">
+                <h2>Epic Gameplay</h2>
+                <p>Experience exciting gameplay, battles and amazing moments.</p>
+            </div>
+        </div>
+
+
+        <!-- VIDEO 3 -->
+        <div class="video-card">
+            <iframe
+                src="https://www.youtube.com/embed/nzk2m989Vb0?si=/VIDEO_ID_3"
+                title="Game Reveal"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+            <div class="video-info">
+                <h2>Game Reveal</h2>
+                <p>Discover new game reveals, announcements and trailers.</p>
+            </div>
+        </div>
+
+
+        <!-- VIDEO 4 -->
+        <div class="video-card">
+            <iframe
+                src="https://www.youtube.com/embed/nzk2m989Vb0?si=/VIDEO_ID_4"
+                title="Gaming Highlights"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+            <div class="video-info">
+                <h2>Gaming Highlights</h2>
+                <p>Enjoy epic gaming moments and unforgettable highlights.</p>
+            </div>
+        </div>
+
+
+        <!-- VIDEO 5 -->
+        <div class="video-card">
+            <iframe
+                src="https://www.youtube.com/embed/GAT_Zvf3TFw?si=/VIDEO_ID_5"
+                title="Action Gameplay"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+            <div class="video-info">
+                <h2>Action Gameplay</h2>
+                <p>Watch intense action, missions and exciting gameplay.</p>
+            </div>
+        </div>
+
+
+        <!-- VIDEO 6 -->
+        <div class="video-card">
+            <iframe
+                src="https://www.youtube.com/embed/e1CTKbuehZg?si=VIDEO_ID_6"
+                title="Open World Gaming"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+            <div class="video-info">
+                <h2>Open World Gaming</h2>
+                <p>Explore massive worlds and unforgettable gaming adventures.</p>
+            </div>
+        </div>
+
+
+        <!-- VIDEO 7 -->
+        <div class="video-card">
+            <iframe
+                src="https://www.youtube.com/embed/h0d-YsfZxFA?si=/VIDEO_ID_7"
+                title="Boss Battle"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+            <div class="video-info">
+                <h2>Epic Boss Battle</h2>
+                <p>Watch powerful bosses and legendary gaming battles.</p>
+            </div>
+        </div>
+
+
+        <!-- VIDEO 8 -->
+        <div class="video-card">
+            <iframe
+                src="https://www.youtube.com/embed/VxHeUJsgcAM?si=/VIDEO_ID_8"
+                title="Gaming Moments"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+            <div class="video-info">
+                <h2>Best Gaming Moments</h2>
+                <p>Relive some of the most exciting moments from gaming.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

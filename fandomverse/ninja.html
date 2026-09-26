@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ninja Outfits</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background:
+            radial-gradient(circle at 85% 0%, rgba(106,45,255,0.25), transparent 40%),
+            radial-gradient(circle at 0% 100%, rgba(255,46,196,0.18), transparent 40%),
+            #06050f;
+            color: #f5f3ff;
+            font-family: Arial, sans-serif;
+            padding: 50px 7%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            text-align: center;
+            color: #a79fd1;
+            margin-bottom: 45px;
+        }
+
+        .outfits {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .outfit {
+            background: #141026;
+            border: 1px solid rgba(139,61,255,0.28);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .outfit:hover {
+            transform: translateY(-8px);
+            border-color: #ef4444;
+        }
+
+        .outfit img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .outfit h2 {
+            font-size: 20px;
+            padding: 18px 18px 5px;
+        }
+
+        .outfit p {
+            color: #9d94c2;
+            padding: 0 18px 20px;
+        }
+
+        @media (max-width: 900px) {
+            .outfits {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .outfits {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="index.html">FANDOM<span>VERSE</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="anime.html">Anime</a>
+      <a href="gaming.html">Gaming</a>
+      <a href="movies.html">Movies</a>
+      <a href="tvshows.html">TV Shows</a>
+      <a href="kpop.html">K-Pop</a>
+      <a href="comics.html">Comics</a>
+      <a href="manga.html">Manga</a>
+      <a href="outfits.html">Outfits</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <form class="nav-search" action="search.html" method="get">
+        <input type="search" name="q" placeholder="Search FandomVerse..." aria-label="Search FandomVerse">
+        <button type="submit" aria-label="Search">🔍</button>
+      </form>
+      <a href="bookmarks.html" class="nav-icon-btn" title="My Bookmarks">🔖</a>
+      <button type="button" class="nav-icon-btn" onclick="showMessage('This is a UI preview only. Login is not implemented in this demo.')" title="Login">👤</button>
+    </div>
+  </nav>
+</header>
+
+<h1>Ninja Outfits</h1>
+    <p class="intro">Explore stealthy and powerful ninja outfits</p>
+
+    <div class="outfits">
+
+        <div class="outfit">
+            <img src="https://i.etsystatic.com/65462437/r/il/d41598/8494123464/il_300x300.8494123464_okd5.jpg" alt="Shadow Ninja">
+            <h2>Itachi</h2>
+            <p>Dark stealth outfit</p>
+        </div>
+
+        <div class="outfit">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDidv3-5aWNgSjCuqAvibuZ4s2tCuJSFtYhk_WME4HTg&s=10" alt="Red Ninja">
+            <h2>Red Ninja</h2>
+            <p>Warrior ninja outfit</p>
+        </div>
+
+        <div class="outfit">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGUo3oHDOYQdb21MeO1Go8og5L0OSBKMwPKOW-4YYk6w&s=10" alt="Black Ninja">
+            <h2>Black Ninja</h2>
+            <p>Classic ninja suit</p>
+        </div>
+
+        <div class="outfit">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcQLfveM08FU2NkzFpnLrKJyEK9ZWxNvDGOuTEtg34eA&s=10" alt="White Ninja">
+            <h2>White Ninja</h2>
+            <p>Silent assassin outfit</p>
+        </div>
+
+        <div class="outfit">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq8qM2OpIqg9FDZYRe3FvH3GJy-l6_47bD_iohfhGoXg&s=10" alt="Ronin Ninja">
+            <h2>Ronin Ninja</h2>
+            <p>Samurai-inspired outfit</p>
+        </div>
+
+        <div class="outfit">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQ_v_7w4axVtXAeZgIGiEI688G4mpFoBkSktKnE97Pg&s=10" alt="Ninja Warrior">
+            <h2>Ninja Warrior</h2>
+            <p>Battle-ready armor</p>
+        </div>
+
+        <div class="outfit">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGhOEHtdpMJyZaq7vSll8-4tDwNR0zjtxselSv9uLJEA&s=10" alt="Assassin Ninja">
+            <h2>Assassin</h2>
+            <p>Stealth combat outfit</p>
+        </div>
+
+        <div class="outfit">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNS8s01XbqYVsaqS2tPQqVQr3NtT6JFMoJuE6BnzEfFQ&s=10" alt="Ninja Master">
+            <h2>Ninja Master</h2>
+            <p>Elite ninja outfit</p>
+        </div>
+
+    </div>
+
+<footer>
+  <p>&copy; 2026 FandomVerse</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

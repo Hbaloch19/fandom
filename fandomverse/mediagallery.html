@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>K-Pop Media Gallery | FandomVerse</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background:
+                radial-gradient(circle at 85% 0%, rgba(106,45,255,0.25), transparent 40%),
+                radial-gradient(circle at 0% 100%, rgba(255,46,196,0.18), transparent 40%),
+                #06050f;
+
+            color: #f5f3ff;
+            font-family: Arial, sans-serif;
+            padding: 50px 7%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 45px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .intro {
+            text-align: center;
+            color: #a79fd1;
+            margin-bottom: 45px;
+            font-size: 17px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .media-card {
+            position: relative;
+            background: #141026;
+            border: 1px solid rgba(139,61,255,0.28);
+            border-radius: 14px;
+            overflow: hidden;
+            transition: 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+        }
+
+        .media-card:hover {
+            transform: translateY(-8px);
+            border-color: #ef44c8;
+
+            box-shadow:
+                0 15px 40px rgba(123,47,247,0.25),
+                0 0 25px rgba(255,46,196,0.15);
+        }
+
+        .media-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+            transition: 0.4s ease;
+        }
+
+        .media-card:hover img {
+            transform: scale(1.06);
+        }
+
+        .badge {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+
+            background: linear-gradient(
+                135deg,
+                #7b2ff7,
+                #ff2ec4
+            );
+
+            color: white;
+            padding: 7px 13px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            z-index: 2;
+        }
+
+        .media-info {
+            padding: 18px;
+        }
+
+        .media-info h2 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .media-info p {
+            color: #9d94c2;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .view-btn {
+            display: inline-block;
+            margin-top: 14px;
+            padding: 9px 15px;
+
+            color: white;
+            text-decoration: none;
+
+            border: 1px solid #7b2ff7;
+            border-radius: 7px;
+
+            font-size: 13px;
+            transition: 0.3s;
+        }
+
+        .view-btn:hover {
+            background: linear-gradient(
+                135deg,
+                #7b2ff7,
+                #ff2ec4
+            );
+
+            border-color: transparent;
+        }
+
+        @media (max-width: 1100px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            body {
+                padding: 35px 5%;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+
+            .media-card img {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>K-POP MEDIA GALLERY</h1>
+
+    <p class="intro">
+        Explore stunning moments, performances and memories from the K-Pop universe
+    </p>
+
+    <div class="gallery">
+
+        <!-- CARD 1 -->
+        <div class="media-card">
+
+            <span class="badge">ITZY</span>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuFRs-VBnHS_EWKa57wgXfJTAY90ip5gRPKNwqYUcNCsMf027yl3XqniDc&s=10" alt="ITZY">
+
+            <div class="media-info">
+                <h2>ITZY</h2>
+
+                <p>
+                    Explore iconic moments and unforgettable performances from BTS.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 2 -->
+        <div class="media-card">
+
+            <span class="badge">NCT</span>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG2AHQM84onwU2cpwRCJ38EK9siFg4pGssC_5_PurQoTb8MvvcYIt_s4E&s=10" alt="NCT">
+
+            <div class="media-info">
+                <h2>NCT</h2>
+
+                <p>
+                    Discover powerful performances and memorable BLACKPINK moments.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 3 -->
+        <div class="media-card">
+
+            <span class="badge">LE SSERAFIM</span>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1-6xRZL6BFzuyEiiD3BrzOntOrup393VAaXVsQuDhQL9xHkUROn3HBLo&s=10" alt="LE SSERAFIM">
+
+            <div class="media-info">
+                <h2>LE SSERAFIM</h2>
+
+                <p>
+                    Experience powerful stages and unforgettable Stray Kids moments.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 4 -->
+        <div class="media-card">
+
+            <span class="badge">AESPA</span>
+
+            <img src="https://cdn-images.dzcdn.net/images/artist/c963d7469a999feb764ad6f16c31dd74/500x500.jpg" alt="AESPA">
+
+            <div class="media-info">
+                <h2>AESPA</h2>
+
+                <p>
+                    Explore TWICE performances, photos and special moments.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 5 -->
+        <div class="media-card">
+
+            <span class="badge">ATEEZ</span>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlXkDgEbYZEFDxSr4vll0VI85ciQdjA8QAebBza0j9JvDTB8xJ_pDg7ppw&s=10" alt="ATEEZ">
+
+            <div class="media-info">
+                <h2>ATEEZ</h2>
+
+                <p>
+                    Discover powerful stages and unforgettable ATEEZ performances.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 6 -->
+        <div class="media-card">
+
+            <span class="badge">ASTRO</span>
+
+            <img src="https://i.scdn.co/image/ab67656300005f1ff3878ee8a2633a8ba5f47b56" alt="ASTRO">
+
+            <div class="media-info">
+                <h2>ASTRO</h2>
+
+                <p>
+                    Explore amazing performances and special SEVENTEEN memories.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 7 -->
+        <div class="media-card">
+
+            <span class="badge">ENHYPEN</span>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjsdc4rXO0ybCDZZVWx3rmmVdqT1i_8KPKhQ5c0JLZm_HS2E11mniaomU&s=10" alt="ENHYPEN">
+
+            <div class="media-info">
+                <h2>ENHYPEN</h2>
+
+                <p>
+                    Experience stunning performances and memorable ENHYPEN moments.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 8 -->
+        <div class="media-card">
+
+            <span class="badge">TXT</span>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTObri18aFQSUfpvU-_Y6TQrcUy-jIGv_u3a1kidBUL4l8_jNsWWbnB3_p_&s=10" alt="TXT">
+
+            <div class="media-info">
+                <h2>TXT</h2>
+
+                <p>
+                    Explore incredible performances and unforgettable TXT moments.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
